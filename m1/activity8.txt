@@ -1,0 +1,1 @@
+There are four algorithms quick union,quick find,weighted quick union, quick union with path compression.among all these quick union with path compression process is better because of less complexity.
