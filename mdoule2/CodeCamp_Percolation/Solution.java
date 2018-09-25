@@ -71,19 +71,19 @@ class Percolation {
     /**
      * { var_description }.
      */
-    int[][] percolation;
+    private int[][] percolation;
     /**
      * { var_description }.
      */
-    int count;
+    private int count;
     /**
      * { var_description }.
      */
-    Union u;
+    private Union u;
     /**
      * { var_description }.
      */
-    int size;
+    private int size;
     /**
      * Constructs the object.
      *
@@ -164,7 +164,7 @@ class Percolation {
 /**
  * main class for percolation.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
