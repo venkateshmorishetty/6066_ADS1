@@ -40,7 +40,7 @@ class Union {
 		}
 	}
 	public boolean isConnected(int val1,int val2) {
-		if(arr[val1] == arr[val2]) {
+		if(root(val1) == root(val2)) {
 			return true;
 		}
 		return false;
