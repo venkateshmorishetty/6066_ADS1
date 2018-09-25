@@ -7,17 +7,17 @@ import java.util.Scanner;
  * Class for union.
  */
 class Union {
-    int[] arr;
-    int[] sz;
+    private int[] arr;
+    private int[] sz;
     /**
      * Constructs the object.
      *
      * @param      size  The size
      */
-    public Union(int size) {
+    public Union(final int size) {
         arr = new int[size];
         sz = new int[size];
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             sz[i] = 1;
             arr[i] = i;
         }
@@ -30,7 +30,7 @@ class Union {
      * @return     { description_of_the_return_value }
      */
     public int root(int val) {
-        while(arr[val] != val) {
+        while (arr[val] != val) {
             val = arr[val];
         }
         return val;
@@ -44,7 +44,7 @@ class Union {
     public void weightedunion(final int val1, final int val2) {
         int p1 = root(val1);
         int p2 = root(val2);
-        if(sz[p1] < sz[p2]) {
+        if (sz[p1] < sz[p2]) {
             arr[p1] = p2;
             sz[p2] += sz[p1];
         } else {
@@ -60,7 +60,7 @@ class Union {
      *
      * @return     True if connected, False otherwise.
      */
-    public boolean isConnected(int val1,int val2) {
+    public boolean isConnected(final int val1, final int val2) {
         return root(val1) == root(val2);
     }
 }
