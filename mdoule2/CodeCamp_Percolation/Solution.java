@@ -36,10 +36,10 @@ class Union {
 
 		if(sz[p1]>sz[p2]) {
 			arr[p2] = p1;
-			sz[p1]++;
+			sz[p1]+=sz[p2];
 		} else {
 			arr[p1] = p2;
-			sz[p2]++;
+			sz[p2]+=sz[p1];
 		}
 
 	}
