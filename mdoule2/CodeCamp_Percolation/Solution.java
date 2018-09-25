@@ -91,7 +91,7 @@ class Percolation{
 		return count;
 	}
 	public void percolate() {
-		u.isConnected(0,percolation.length*percolation.length-1 );
+		System.out.println(u.isConnected(0,percolation.length*percolation.length-1 ));
 	}
 }
 
