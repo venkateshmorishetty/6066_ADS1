@@ -23,11 +23,11 @@ class Union {
         }
     }
     /**
-     * { function_description }.
+     * { determines parent of given node }.
      *
      * @param      val   The value
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns parent node }
      */
     public int root(int val) {
         while (arr[val] != val) {
@@ -36,7 +36,7 @@ class Union {
         return val;
     }
     /**
-     * { function_description }.
+     * { weighted union function }.
      *
      * @param      val1  The value 1
      * @param      val2  The value 2
