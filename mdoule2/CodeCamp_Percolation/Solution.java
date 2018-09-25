@@ -29,8 +29,11 @@ class Union {
 		return val;
 	}
 	public void weighted_union(int val1, int val2) {
+
 		int p1 = root(val1);
+
 		int p2 = root(val2);
+
 		if(sz[p1]>sz[p2]) {
 			arr[p2] = p1;
 			sz[p1]++;
@@ -38,6 +41,7 @@ class Union {
 			arr[p1] = p2;
 			sz[p2]++;
 		}
+
 	}
 	public boolean isConnected(int val1,int val2) {
 		return root(val1) == root(val2);
@@ -57,25 +61,28 @@ class Percolation{
 		count++;
 		//top
 		if(row-1 >=0 && percolation[row-1][col] == 1){
-			u.weighted_union(percolation[row][col],percolation[row-1][col]);
+			u.weighted_union(2*row+col,2*(row-1)+col);
 		}
 		//bottom
 		if(row+1<percolation.length && percolation[row+1][col] == 1){
-			u.weighted_union(percolation[row][col], percolation[row+1][col]);
+
+			u.weighted_union(2*row+col, 2*(row+1)+col);
 		}
 		//right
 		if(col-1>=0 && percolation[row][col-1] == 1) {
-			u.weighted_union(percolation[row][col], percolation[row][col-1]);
+
+			u.weighted_union(2*row+col, 2*row+(col-1));
 		}
 		//left
 		if(col+1<percolation.length && percolation[row][col+1] == 1) {
-			u.weighted_union(percolation[row][col],percolation[row][col+1]);
+
+			u.weighted_union(2*row+col,2*row+(col+1));
 		}
 		if(row == 0) {
-			u.weighted_union(percolation[row][col],percolation.length*percolation.length);
+			u.weighted_union(2*row+col,percolation.length*percolation.length);
 		}
 		if(col == percolation.length-1){
-			u.weighted_union(percolation[row][col],percolation.length*percolation.length+1);
+			u.weighted_union(2*row+col,percolation.length*percolation.length+1);
 		}
 	}
 	public boolean isOpen(int row, int col) {
