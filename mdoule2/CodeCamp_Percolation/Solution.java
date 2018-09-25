@@ -34,13 +34,16 @@ class Union {
 
 		int p2 = root(val2);
 
-		if(sz[p1]>sz[p2]) {
-			arr[p2] = p1;
-			sz[p1]+=sz[p2];
-		} else {
+		if(sz[p1]<sz[p2]) {
 			arr[p1] = p2;
 			sz[p2]+=sz[p1];
+		} else {
+			arr[p2] = p1;
+			sz[p1]+=sz[p2];
 		}
+
+		// System.out.println("array is"+Arrays.toString(arr));
+		// System.out.println("size is"+Arrays.toString(sz));
 
 	}
 	public boolean isConnected(int val1,int val2) {
@@ -66,7 +69,12 @@ class Percolation{
 
 		percolation[row][col] = 1;
 		count++;
-		//top
+		// for(int i= 0; i < size; i++) {
+		// 	System.out.println(Arrays.toString(percolation[i]));
+		// }
+
+		// System.out.println("*******************");
+		// //top
 		if(row-1 >= 0 && percolation[row-1][col] == 1){
 			u.weighted_union(size*row+col,size*(row-1)+col);
 		}
@@ -88,7 +96,7 @@ class Percolation{
 		if(row == 0) {
 			u.weighted_union(size*row+col,size*size);
 		}
-		if(col == size-1){
+		if(row == size-1){
 			u.weighted_union(size*row+col,size*size+1);
 		}
 	}
