@@ -3,9 +3,17 @@
  */
 import java.io.*;
 import java.util.Scanner;
+/**
+ * Class for union.
+ */
 class Union {
 	int[] arr;
 	int[] sz;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      size  The size
+	 */
 	public Union(int size) {
 		arr = new int[size];
 		sz = new int[size];
@@ -14,12 +22,25 @@ class Union {
 			arr[i] = i;
 		}
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      val   The value
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int root(int val) {
 		while(arr[val] != val) {
 			val = arr[val];
 		}
 		return val;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      val1  The value 1
+	 * @param      val2  The value 2
+	 */
 	public void weighted_union(int val1, int val2) {
 		int p1 = root(val1);
 		int p2 = root(val2);
@@ -31,21 +52,43 @@ class Union {
 			sz[p1] += sz[p2];
 		}
 	}
+	/**
+	 * Determines if connected.
+	 *
+	 * @param      val1  The value 1
+	 * @param      val2  The value 2
+	 *
+	 * @return     True if connected, False otherwise.
+	 */
 	public boolean isConnected(int val1,int val2) {
 		return root(val1) == root(val2);
 	}
 }
+/**
+ * Class for percolation.
+ */
 class Percolation {
 	int[][] percolation;
 	int count;
 	Union u;
 	int size;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n     { parameter_description }
+	 */
 	public Percolation(int n) {
 		percolation = new int[n][n];
 		size = n;
 		u = new Union(n*n+2);
 		count = 0;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      row   The row
+	 * @param      col   The col
+	 */
 	public void open(int row, int col) {
 		if (percolation[row][col] == 1) {
 			return;
@@ -75,24 +118,53 @@ class Percolation {
 			u.weighted_union(size * row + col,size * size + 1);
 		}
 	}
+	/**
+	 * Determines if open.
+	 *
+	 * @param      row   The row
+	 * @param      col   The col
+	 *
+	 * @return     True if open, False otherwise.
+	 */
 	public boolean isOpen(int row, int col) {
 		if (percolation[row][col] == 1) {
 			return true;
 		}
 		return false;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int numberOfOpenSites() {
 		return count;
 	}
+	/**
+	 * { function_description }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public boolean percolate() {
-		return u.isConnected(size * size,size * size+1);
+		return u.isConnected(size * size,size * size + 1);
 	}
 }
 /**
  * main class for percolation.
  */
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	public Solution() {
+		//constructor for solution.
+	}
+	/**
+	 * { function_description }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
 		Percolation p = new Percolation(size);
