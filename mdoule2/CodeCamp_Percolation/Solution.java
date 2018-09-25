@@ -5,19 +5,19 @@ import java.util.Scanner;
  */
 class Percolation {
     /**
-     * { var_description }.
+     * { network }.
      */
     private int[][] percolation;
     /**
-     * { var_description }.
+     * { count for number open in network }.
      */
     private int count;
     /**
-     * { var_description }.
+     * { union class variable }.
      */
     private Union u;
     /**
-     * { var_description }.
+     * { size for network }.
      */
     private int size;
     /**
@@ -32,7 +32,7 @@ class Percolation {
         count = 0;
     }
     /**
-     * { function_description }.
+     * { to make element as open }.
      *
      * @param      row   The row
      * @param      col   The col
@@ -81,17 +81,17 @@ class Percolation {
         return false;
     }
     /**
-     * { function_description }.
+     * { returns total number of opens in network }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { number of opens }
      */
     public int numberOfOpenSites() {
         return count;
     }
     /**
-     * { function_description }.
+     * { checks whether network is percolate or not }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { true or false }
      */
     public boolean percolate() {
         return u.isConnected(size * size, size * size + 1);
@@ -104,11 +104,11 @@ final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         //constructor for solution.
     }
     /**
-     * { function_description }.
+     * { main function }.
      *
      * @param      args  The arguments
      */
