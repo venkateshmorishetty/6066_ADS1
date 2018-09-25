@@ -51,42 +51,49 @@ class Percolation{
 	int[][] percolation;
 	int count;
 	Union u;
+	int size;
 	public Percolation(int n){
 		percolation = new int[n][n];
+		size = n;
 		u = new Union(n*n+2);
 		count = 0;
 	}
 	public void open(int row, int col) {
+
+		if(percolation[row][col] == 1){
+			return;
+		}
+
 		percolation[row][col] = 1;
 		count++;
 		//top
-		if(row-1 >=0 && percolation[row-1][col] == 1){
-			u.weighted_union(2*row+col,2*(row-1)+col);
+		if(row-1 >= 0 && percolation[row-1][col] == 1){
+			u.weighted_union(size*row+col,size*(row-1)+col);
 		}
 		//bottom
-		if(row+1<percolation.length && percolation[row+1][col] == 1){
+		if(row+1<size && percolation[row+1][col] == 1){
 
-			u.weighted_union(2*row+col, 2*(row+1)+col);
+			u.weighted_union(size*row+col, size*(row+1)+col);
 		}
 		//right
 		if(col-1>=0 && percolation[row][col-1] == 1) {
 
-			u.weighted_union(2*row+col, 2*row+(col-1));
+			u.weighted_union(size*row+col, size*row+(col-1));
 		}
 		//left
-		if(col+1<percolation.length && percolation[row][col+1] == 1) {
+		if(col+1<size && percolation[row][col+1] == 1) {
 
-			u.weighted_union(2*row+col,2*row+(col+1));
+			u.weighted_union(size*row+col,size*row+(col+1));
 		}
 		if(row == 0) {
-			u.weighted_union(2*row+col,percolation.length*percolation.length);
+			u.weighted_union(size*row+col,size*size);
 		}
-		if(col == percolation.length-1){
-			u.weighted_union(2*row+col,percolation.length*percolation.length+1);
+		if(col == size-1){
+			u.weighted_union(size*row+col,size*size+1);
 		}
 	}
 	public boolean isOpen(int row, int col) {
-		if(percolation[row-1][col-1] == 1) {
+		if(percolation[row][col] == 1) {
 			return true;
 		}
 		return false;
@@ -95,7 +102,7 @@ class Percolation{
 		return count;
 	}
 	public void percolate() {
-		System.out.println(u.isConnected(percolation.length*percolation.length,percolation.length*percolation.length+1 ));
+		System.out.println(u.isConnected(size*size,size*size+1 ));
 	}
 }
 
