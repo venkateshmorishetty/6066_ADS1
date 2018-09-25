@@ -40,10 +40,7 @@ class Union {
 		}
 	}
 	public boolean isConnected(int val1,int val2) {
-		if(root(val1) == root(val2)) {
-			return true;
-		}
-		return false;
+		return root(val1) == root(val2);
 	}
 }
 class Percolation{
@@ -91,7 +88,7 @@ class Percolation{
 		return count;
 	}
 	public void percolate() {
-		System.out.println(u.isConnected(0,percolation.length*percolation.length-1 ));
+		System.out.println(u.isConnected(percolation.length*percolation.length,percolation.length*percolation.length+1 ));
 	}
 }
 
