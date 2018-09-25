@@ -64,7 +64,7 @@ class Percolation{
 		}
 		//bottom
 		if(row+1<percolation.length && percolation[row+1][col] == 1){
-			u.weighted_union(percolation[row][col], percolation[row][col+1]);
+			u.weighted_union(percolation[row][col], percolation[row+1][col]);
 		}
 		//right
 		if(col-1>=0 && percolation[row][col-1] == 1) {
