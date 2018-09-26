@@ -10,7 +10,7 @@ final class Solution {
         //pass
     }
     /**
-     * { function_description }.
+     * { solution class }.
      *
      * @param      args  The arguments
      */
