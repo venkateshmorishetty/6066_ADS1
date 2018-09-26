@@ -5,7 +5,6 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		size1 = sc.nextInt();
 		size2 = sc.nextInt();
-		sc.nextLine();
 		String[] arraystring1 = sc.next().split(",");
 		String[] arraystring2 = sc.next().split(",");
 		int[] arr1 = new int[size1];
@@ -20,7 +19,7 @@ class Solution {
 		}
 		int first=0,second=0;
 		for(int i = 0; i < newsize; i++) {
-			if(arr1.length > 0 && arr2.length > 0 && first<arr1.length && second < arr2.length) {
+			if(size1 > 0 && size2 > 0 && first<arr1.length && second < arr2.length) {
 				if(arr1[first]>arr2[second]) {
 					res[i] = arr2[second];
 					second++;
