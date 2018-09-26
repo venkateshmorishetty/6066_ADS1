@@ -20,7 +20,7 @@ class Solution {
 		}
 		int first=0,second=0;
 		for(int i = 0; i < newsize; i++) {
-			if(first<arr1.length && second < arr2.length) {
+			if(arr1.length > 0 && arr2.length > 0 && first<arr1.length && second < arr2.length) {
 				if(arr1[first]>arr2[second]) {
 					res[i] = arr2[second];
 					second++;
