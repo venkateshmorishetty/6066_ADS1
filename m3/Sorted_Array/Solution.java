@@ -5,7 +5,13 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		size1 = sc.nextInt();
 		size2 = sc.nextInt();
-		String[] arraystring1 = sc.next().split(",");
+		String[] arraystring1 = new String[size1];
+		if(size1 > 0) {
+			arraystring1 = sc.next().split(",");
+		} else {
+			// arraysstring1 = null;
+			sc.nextLine();
+		}
 		String[] arraystring2 = sc.next().split(",");
 		int[] arr1 = new int[size1];
 		int[] arr2 = new int[size2];
