@@ -6,11 +6,11 @@ class Stack {
     /**
      * { stack }.
      */
-    String[] stack;
+    private String[] stack;
     /**
      * { top variable }.
      */
-    int top = -1;
+    private int top = -1;
     /**
      * Constructs the object.
      *
@@ -37,6 +37,9 @@ class Stack {
             return stack[top--];
         }
         return null;
+    }
+    public int getTop() {
+        return top;
     }
 }
 /**
@@ -87,7 +90,7 @@ final class Solution {
                     }
                 }
             }
-            if (s.top == -1 && flag == 0) {
+            if (s.getTop() == -1 && flag == 0) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
