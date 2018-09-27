@@ -9,14 +9,22 @@ class Stack {
     Stack(int size) {
         stack = new String[size];
     }
-    public boolean push(String item) {
+    /**
+     * { insert the element to stack }.
+     *
+     * @param      item  The item
+     */
+    public void push(String item) {
         stack[++top] = item;
-        return true;
-    } 
+    }
+    /**
+     * { pop the top element }.
+     *
+     * @return     { stack top element }.
+     */
     public String pop() {
-        if(top>=0) {
+        if (top >= 0) {
             return stack[top--];
-
         }
         return null;
     }
@@ -24,7 +32,13 @@ class Stack {
 /**
  * Class for solution.
  */
-final class Solution{
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //pass
+    }
     /**
      * { Solution class }.
      *
@@ -41,25 +55,26 @@ final class Solution{
             String[] arr = line.split("", line.length());
             s = new Stack(arr.length);
             for (int i = 0; i < arr.length; i++) {
-                if (arr[i].equals("(") || arr[i].equals("{") || arr[i].equals("[")) {
+                if (arr[i].equals("(") || arr[i].equals("{")
+                    || arr[i].equals("[")) {
                     s.push(arr[i]);
                 } else {
                     String check = s.pop();
                     if (check == null) {
                         flag = 1;
-                        break;      
+                        break;   
                     } else {
-                        if(check.equals("(") && arr[i].equals(")")) {   
+                        if (check.equals("(") && arr[i].equals(")")) {
                             continue;
                         } else if (check.equals("{") && arr[i].equals("}")) {
                             continue;
-                        } else if(check.equals("[") && arr[i].equals("]")) {
+                        } else if (check.equals("[") && arr[i].equals("]")) {
                             continue;
                         } else {
                             flag = 1;
                             break;
                         }
-                    }       
+                    }   
                 }
             }
             if (s.top == -1 && flag == 0) {
