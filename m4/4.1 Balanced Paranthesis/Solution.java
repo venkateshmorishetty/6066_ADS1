@@ -4,9 +4,20 @@ import java.util.Arrays;
  * stack class.
  */
 class Stack {
+    /**
+     * { stack }.
+     */
     String[] stack;
+    /**
+     * { top variable }.
+     */
     int top = -1;
-    Stack(int size) {
+    /**
+     * Constructs the object.
+     *
+     * @param      size  The size
+     */
+    Stack(final int size) {
         stack = new String[size];
     }
     /**
@@ -14,7 +25,7 @@ class Stack {
      *
      * @param      item  The item
      */
-    public void push(String item) {
+    public void push(final String item) {
         stack[++top] = item;
     }
     /**
@@ -62,7 +73,7 @@ final class Solution {
                     String check = s.pop();
                     if (check == null) {
                         flag = 1;
-                        break;   
+                        break;
                     } else {
                         if (check.equals("(") && arr[i].equals(")")) {
                             continue;
@@ -74,7 +85,7 @@ final class Solution {
                             flag = 1;
                             break;
                         }
-                    }   
+                    }
                 }
             }
             if (s.top == -1 && flag == 0) {
