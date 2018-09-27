@@ -1,10 +1,9 @@
 import java.util.*;
 class Stack {
 	String[] stack;
-	int size, top = -1;
+	int top = -1;
 	Stack(int size) {
 		stack = new String[size];
-		this.size = size;
 	}
 	public boolean push(String item) {
 		stack[++top] = item;
@@ -17,9 +16,7 @@ class Stack {
 		}
 		return null;
 	}
-
 }
-
 class Solution{
 	public static void main(String[] args) {
 		Stack s;
@@ -37,12 +34,9 @@ class Solution{
 				} else {
 					String check = s.pop();
 					if(check == null){
-
-						flag =1;
-						break;
-						
+						flag = 1;
+						break;		
 					} else {
-						// System.out.println("iam here");
 						if(check.equals("(") && arr[i].equals(")"))
 						{	
 
@@ -55,8 +49,7 @@ class Solution{
 						{
 							continue;
 						} else {
-
-							flag =1;
+							flag = 1;
 							break;
 						}
 					}		
