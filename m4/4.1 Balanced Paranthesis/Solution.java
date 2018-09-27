@@ -38,6 +38,11 @@ class Stack {
         }
         return null;
     }
+    /**
+     * Gets the top.
+     *
+     * @return     The top.
+     */
     public int getTop() {
         return top;
     }
