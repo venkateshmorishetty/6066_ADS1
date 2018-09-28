@@ -40,7 +40,7 @@ class linkedlist {
 			c = 1;
 			size--;
 		}
-		result += " "+head.data;
+		result += head.data;
 		System.out.println(result);
 	}
 }
