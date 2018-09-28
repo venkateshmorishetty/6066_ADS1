@@ -27,7 +27,6 @@ class linkedlist {
 		}
 		int c;
 		node temp;
-		// System.out.println(tail.data);
 		while(size != 1) {
 			for(c = 1; c < count; c++) {
 				temp = head;
