@@ -15,7 +15,10 @@ class node {
 class linkedlist {
 	int size;
 	int count;
-	node head, tail;
+	/**
+	 * { head and tail }.
+	 */
+	private node head, tail;
 	/**
 	 * { result }.
 	 */
