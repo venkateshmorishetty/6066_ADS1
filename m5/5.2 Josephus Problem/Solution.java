@@ -17,7 +17,13 @@ class linkedlist {
 	int count;
 	node head,tail;
 	String result ="";
-	linkedlist(int s, int c) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      s     { size of list }
+	 * @param      c     { count }
+	 */
+	linkedlist(final int s, final int c) {
 		size = s;
 		count = c;
 	}
@@ -28,21 +34,21 @@ class linkedlist {
 		node newnode = new node(0);
 		head = newnode;
 		tail = newnode;
-		for(int i = 1; i < size; i++) {
+		for (int i = 1; i < size; i++) {
 			node n = new node(i);
 			tail.next = n;
 			tail = n;
 		}
 		int c;
 		node temp;
-		while(size != 1) {
-			for(c = 1; c < count; c++) {
+		while (size != 1) {
+			for (c = 1; c < count; c++) {
 				temp = head;
 				head = head.next;
 				tail.next = temp;
 				tail = temp;
 			}
-			result += head.data+" ";
+			result += head.data + " ";
 			head = head.next;
 			c = 1;
 			size--;
