@@ -4,6 +4,12 @@ import java.util.Scanner;
  */
 final class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //pass.
+    }
+    /**
      * { soultution }.
      *
      * @param      args  The arguments
@@ -12,10 +18,10 @@ final class Solution {
         linkedlist l = new linkedlist();
         Scanner sc = new Scanner(System.in);
         int lines = sc.nextInt();
-        for(int t = 0; t <= lines; t++) {
+        for (int t = 0; t <= lines; t++) {
             String s = sc.nextLine();
             String[] tokens = s.split(" ");
-            switch(tokens[0]) {
+            switch (tokens[0]) {
                 case "isEmpty":
                 System.out.println(l.isEmpty());
                     break;
