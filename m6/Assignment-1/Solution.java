@@ -58,7 +58,7 @@ class AddLargeNumbers {
 
             value = stack1[i]+stack2[i];
             if(value>=10) {
-                System.out.println(value);
+                // System.out.println(value);
                 LinkedList node = new LinkedList(value%10 + carry);
                 carry = value / 10;
                 if(head == null) {
