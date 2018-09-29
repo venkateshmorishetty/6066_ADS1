@@ -15,8 +15,11 @@ class node {
 class linkedlist {
 	int size;
 	int count;
-	node head,tail;
-	String result ="";
+	node head, tail;
+	/**
+	 * { result }.
+	 */
+	private String result = "";
 	/**
 	 * Constructs the object.
 	 *
