@@ -51,14 +51,9 @@ class AddLargeNumbers {
             temp1 = temp1.next;
         }stack2[top2++] = temp1.digit;
 
-
         for(int i = top1-1; i >= 0; i--) {
-            // System.out.println(stack1[i]);
-            // System.out.println(stack2[i]);
-
             value = stack1[i]+stack2[i];
             if(value>=10) {
-                // System.out.println(value);
                 LinkedList node = new LinkedList(value%10 + carry);
                 carry = value / 10;
                 if(head == null) {
@@ -80,7 +75,17 @@ class AddLargeNumbers {
                 }
             }
         }
-    return head;
+        LinkedList prev = null,next = null;
+        LinkedList t1 = head;
+        while(t1!=null) {
+            next = t1.next;
+            t1.next = prev;
+            prev = t1;
+            t1 = next;
+        }
+        t1 = prev;
+
+    return t1;
     }
 }
 
