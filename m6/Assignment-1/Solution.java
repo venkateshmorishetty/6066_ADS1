@@ -51,7 +51,7 @@ class AddLargeNumbers {
             temp1 = temp1.next;
         }stack2[top2++] = temp1.digit;
 
-        for(int i = top1-1; i >= 0; i--) {
+        for(int i = top1 - 1; i >= 0; i--) {
             value = stack1[i]+stack2[i];
             if(value>=10) {
                 LinkedList node = new LinkedList(value%10 + carry);
@@ -74,6 +74,11 @@ class AddLargeNumbers {
                     tail = node;
                 }
             }
+        }
+        if(carry>0) {
+            LinkedList node = new LinkedList(carry);
+            tail.next = node;
+            tail = node;
         }
         LinkedList prev = null,next = null;
         LinkedList t1 = head;
