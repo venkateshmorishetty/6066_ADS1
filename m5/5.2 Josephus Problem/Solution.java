@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * Class for node.
+ */
 class node {
 	int data;
 	node next;
@@ -6,6 +9,9 @@ class node {
 		data = d;
 	}
 }
+/**
+ * Class for linkedlist.
+ */
 class linkedlist {
 	int size;
 	int count;
@@ -15,7 +21,9 @@ class linkedlist {
 		size = s;
 		count = c;
 	}
-
+	/**
+	 * { josphproblem }.
+	 */
 	public void josephproblem() {
 		node newnode = new node(0);
 		head = newnode;
@@ -43,17 +51,31 @@ class linkedlist {
 		System.out.println(result);
 	}
 }
-class Solution{
-	public static void main(String[] args) {
+/**
+ * { solution class }.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//pass.
+	}
+	/**
+	 * { main }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		linkedlist l;
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		sc.nextLine();
-		for(int i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++) {
 			String[] tokens = sc.nextLine().split(" ");
-			l = new linkedlist(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			l = new linkedlist(Integer.parseInt(tokens[0]),
+				Integer.parseInt(tokens[1]));
 			l.josephproblem();
 		}
 	}
-	
 }
