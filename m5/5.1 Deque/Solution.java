@@ -1,6 +1,14 @@
 import java.util.Scanner;
-class Solution {
-    public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * { soultution }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         linkedlist l = new linkedlist();
         Scanner sc = new Scanner(System.in);
         int lines = sc.nextInt();
