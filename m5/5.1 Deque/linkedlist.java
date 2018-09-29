@@ -18,11 +18,6 @@ class linkedlist{
 			print();
 		}
 		else{
-			// node temp = head;
-			// while(temp.next!=null) {
-			// 	temp = temp.next;
-			// }
-			// temp.next = newnode;
 			tail.next = newnode;
 			tail = newnode;
 		}
