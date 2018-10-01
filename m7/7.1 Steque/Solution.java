@@ -137,7 +137,7 @@ final class Solution {
         //constructor.
     }
     /**
-     * { main method }
+     * { main method }.
      *
      * @param      args  The arguments
      */
