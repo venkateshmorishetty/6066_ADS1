@@ -95,7 +95,6 @@ class LinkedList {
             tail.setNext(newnode);
             tail = newnode;
         }
-        // print();
     }
     /**
      * { this will pop the element from steque }.
@@ -104,11 +103,9 @@ class LinkedList {
      */
     public void pop() {
         if (head == null) {
-            // System.out.println("Steque is empty.");
             return;
         }
         head = head.next;
-        // print();
     }
     /**
      * { this will print steque }.
