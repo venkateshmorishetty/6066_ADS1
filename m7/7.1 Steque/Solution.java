@@ -65,7 +65,8 @@ class LinkedList {
     }
     /**
      * { this method will push element into steque }.
-     * { time complexity to push an element into steque is O(1) because didn't use any loops}.
+     * { time complexity to push an element into steque is
+     * O(1) because didn't use any loops}.
      * @param      data  The data
      */
     public void push(final int data) {
@@ -81,7 +82,8 @@ class LinkedList {
     }
     /**
      * { this method will enqueue the element into steque }.
-     * {time complexity require to enqueue an element into steque is O(1) because of using tail }.
+     * {time complexity require to enqueue an element into
+     * steque is O(1) because of using tail }.
      * @param      data  The data
      */
     public void enqueue(final int data) {
@@ -97,7 +99,8 @@ class LinkedList {
     }
     /**
      * { this will pop the element from steque }.
-     * {time complexity require to pop an element is O(1) because we shift head }.
+     * {time complexity require to pop an element is O(1)
+     * because we shift head }.
      */
     public void pop() {
         if (head == null) {
@@ -109,7 +112,8 @@ class LinkedList {
     }
     /**
      * { this will print steque }.
-     * {time complexity require to complete print elements is O(n) becaue loop runs until next not null }.
+     * {time complexity require to complete print elements is O(n)
+     * becaue loop runs until next not null }.
      */
     public void print() {
         Node temp = head;
