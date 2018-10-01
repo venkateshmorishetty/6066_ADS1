@@ -14,7 +14,7 @@ class LinkedList {
 	/**
 	 * Class for node.
 	 */
-	class Node {
+	final class Node {
 		/**
 		 * { data value }.
 		 */
