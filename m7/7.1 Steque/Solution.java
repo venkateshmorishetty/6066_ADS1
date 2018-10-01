@@ -49,7 +49,7 @@ class LinkedList {
 
 	public void pop() {
 		if(head == null) {
-			System.out.println("Stequeue is empty");
+			System.out.println("Steque is empty");
 			return;
 		}
 		head = head.next;
@@ -61,7 +61,7 @@ class LinkedList {
 		String result = "";
 		if (head == null)
 		{
-			System.out.println("Stequeue is empty");
+			System.out.println("Steque is empty");
 			return;
 
 		} 		
