@@ -6,11 +6,11 @@ class LinkedList {
 	/**
 	 * { head }.
 	 */
-	Node head = null;
+	private Node head = null;
 	/**
 	 * { tail }.
 	 */
-	Node tail = null;
+	private Node tail = null;
 	/**
 	 * Class for node.
 	 */
