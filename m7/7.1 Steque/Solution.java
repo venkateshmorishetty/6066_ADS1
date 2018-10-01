@@ -101,7 +101,7 @@ class LinkedList {
      */
     public void pop() {
         if (head == null) {
-            System.out.println("Steque is empty.");
+            // System.out.println("Steque is empty.");
             return;
         }
         head = head.next;
@@ -167,7 +167,7 @@ final class Solution {
                 break;
                 case "pop":
                 l.pop();
-                // l.print();
+                l.print();
                 break;
                 default:
                 break;
