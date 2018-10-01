@@ -8,20 +8,44 @@ class LinkedList {
 	 * Class for node.
 	 */
 	class Node {
-		int data;
-		Node next;
+		/**
+		 * { data value }.
+		 */
+		private int data;
+		/**
+		 * { next node address }.
+		 */
+		private Node next;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      d     { set the data to a node }.
+		 */
 		private Node(final int d) {
 			data = d;
 		}
-
+		/**
+		 * Gets the data.
+		 *
+		 * @return     The data.
+		 */
 		public int getData() {
 			return data;
 		}
-
+		/**
+		 * Gets the next.
+		 *
+		 * @return     The next.
+		 */
 		public Node getNext() {
 			return next;
 		}
-		public void setNext(Node address) {
+		/**
+		 * Sets the next.
+		 *
+		 * @param      address  The address
+		 */
+		public void setNext(final Node address) {
 			this.next = address;
 		}
 	}
@@ -39,7 +63,7 @@ class LinkedList {
 	 */
 	public void push(final int data) {
 		Node newnode = new Node(data);
-		if(head == null) {
+		if (head == null) {
 			head = newnode;
 			tail = newnode;
 		} else {
@@ -55,7 +79,7 @@ class LinkedList {
 	 */
 	public void enqueue(final int data) {
 		Node newnode = new Node(data);
-		if(head == null) {
+		if (head == null) {
 			head = newnode;
 			tail = newnode;
 		} else {
@@ -95,7 +119,21 @@ class LinkedList {
 	}
 
 }
+/**
+ * { Solution class }.
+ */
 final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor.
+	}
+	/**
+	 * { main method }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		LinkedList l = new LinkedList();
 		Scanner sc = new Scanner(System.in);
@@ -124,6 +162,6 @@ final class Solution {
 				}
 			}
 			l.makeListempty();
-		}	
+		}
 	}
 }
