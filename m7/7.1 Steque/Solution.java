@@ -3,7 +3,14 @@ import java.util.Scanner;
  * List of linkeds.
  */
 class LinkedList {
-	Node head = null, tail = null;
+	/**
+	 * { head }.
+	 */
+	Node head = null;
+	/**
+	 * { tail }.
+	 */
+	Node tail = null;
 	/**
 	 * Class for node.
 	 */
