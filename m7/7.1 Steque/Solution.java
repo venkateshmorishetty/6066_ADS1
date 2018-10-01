@@ -167,7 +167,7 @@ final class Solution {
                 break;
                 case "pop":
                 l.pop();
-                l.print();
+                // l.print();
                 break;
                 default:
                 break;
