@@ -65,7 +65,7 @@ class LinkedList {
     }
     /**
      * { this method will push element into steque }.
-     *
+     * { time complexity to push an element into steque is O(1) because didn't use any loops}.
      * @param      data  The data
      */
     public void push(final int data) {
@@ -77,11 +77,11 @@ class LinkedList {
             newnode.setNext(head);
             head = newnode;
         }
-        print();
+        // print();
     }
     /**
      * { this method will enqueue the element into steque }.
-     *
+     * {time complexity require to enqueue an element into steque is O(1) because of using tail }.
      * @param      data  The data
      */
     public void enqueue(final int data) {
@@ -93,10 +93,11 @@ class LinkedList {
             tail.setNext(newnode);
             tail = newnode;
         }
-        print();
+        // print();
     }
     /**
      * { this will pop the element from steque }.
+     * {time complexity require to pop an element is O(1) because we shift head }.
      */
     public void pop() {
         if (head == null) {
@@ -104,10 +105,11 @@ class LinkedList {
             return;
         }
         head = head.next;
-        print();
+        // print();
     }
     /**
      * { this will print steque }.
+     * {time complexity require to complete print elements is O(n) becaue loop runs until next not null }.
      */
     public void print() {
         Node temp = head;
@@ -157,12 +159,15 @@ final class Solution {
                 switch (line[0]) {
                 case "push":
                 l.push(Integer.parseInt(line[1]));
+                l.print();
                 break;
                 case "enqueue":
                 l.enqueue(Integer.parseInt(line[1]));
+                l.print();
                 break;
                 case "pop":
                 l.pop();
+                l.print();
                 break;
                 default:
                 break;
