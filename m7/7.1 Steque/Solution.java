@@ -1,11 +1,16 @@
 import java.util.Scanner;
-
+/**
+ * List of linkeds.
+ */
 class LinkedList {
 	Node head = null, tail = null;
+	/**
+	 * Class for node.
+	 */
 	class Node {
 		int data;
 		Node next;
-		private Node(int d) {
+		private Node(final int d) {
 			data = d;
 		}
 
@@ -20,11 +25,19 @@ class LinkedList {
 			this.next = address;
 		}
 	}
+	/**
+	 * Makes a listempty.
+	 */
 	public void makeListempty() {
 		head = null;
 		tail = null;
 	}
-	public void push(int data) {
+	/**
+	 * { this method will push element into steque }.
+	 *
+	 * @param      data  The data
+	 */
+	public void push(final int data) {
 		Node newnode = new Node(data);
 		if(head == null) {
 			head = newnode;
@@ -35,7 +48,12 @@ class LinkedList {
 		}
 		print();
 	}
-	public void enqueue(int data) {
+	/**
+	 * { this method will enqueue the element into steque }.
+	 *
+	 * @param      data  The data
+	 */
+	public void enqueue(final int data) {
 		Node newnode = new Node(data);
 		if(head == null) {
 			head = newnode;
@@ -46,26 +64,29 @@ class LinkedList {
 		}
 		print();
 	}
-
+	/**
+	 * { this will pop the element from steque }.
+	 */
 	public void pop() {
-		if(head == null) {
+		if (head == null) {
 			System.out.println("Steque is empty.");
 			return;
 		}
 		head = head.next;
 		print();
 	}
-
+	/**
+	 * { this will print steque }.
+	 */
 	public void print() {
 		Node temp = head;
 		String result = "";
-		if (head == null)
-		{
+		if (head == null) {
 			System.out.println("Steque is empty.");
 			return;
 
-		} 		
-		while(temp.next!=null) {
+		}
+		while (temp.next != null) {
 			result += temp.getData() + ", ";
 			temp = temp.getNext();
 		}
@@ -74,16 +95,16 @@ class LinkedList {
 	}
 
 }
-class Solution {
-	public static void main(String[] args) {
+final class Solution {
+	public static void main(final String[] args) {
 		LinkedList l = new LinkedList();
 		Scanner sc = new Scanner(System.in);
 		int testcases = sc.nextInt();
 		sc.nextLine();
-		for(int i = 0; i <= testcases; i++) {
-			while(sc.hasNext()) {
+		for (int i = 0; i <= testcases; i++) {
+			while (sc.hasNext()) {
 			String input = sc.nextLine();
-			if(input.length()==0){
+			if (input.length() == 0) {
 				System.out.println();
 				break;
 			}
@@ -98,10 +119,11 @@ class Solution {
 				case "pop":
 				l.pop();
 				break;
-				} 
+				default:
+				break;
+				}
 			}
 			l.makeListempty();
-			// System.out.println();
 		}	
 	}
 }
