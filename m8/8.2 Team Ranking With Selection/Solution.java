@@ -111,9 +111,15 @@ class Teams {
         return t;
     }
 }
-class sort {
+/**
+ * Class for sort.
+ */
+class Sort {
     /**
-     * { sorts the array of objects }.
+     * { sorts the array }
+     *
+     * @param      t     { array of teams }
+     * @param      size  The size
      */
     public void sorting(Team[] t, int size) {
         for (int i = 1; i < size; i++) {
@@ -148,7 +154,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Teams teams = new Teams();
-        sort s = new sort();
+        Sort s = new Sort();
         Scanner sc = new Scanner(System.in);
         while (sc.hasNext()) {
             String[] line = sc.nextLine().split(",");
