@@ -99,18 +99,18 @@ class Teams {
      * { sorts the array of objects }.
      */
     public void sorting() {
-        for(int i = 1; i < size; i++) {
+        for (int i = 1; i < size; i++) {
             Team key = t[i];
             int j = i - 1;
             int check = t[j].compareTo(key);
-            while(check == 1 && j >= 0) {
-                t[j+1] = t[j];
+            while (check == 1 && j >= 0) {
+                t[j + 1] = t[j];
                 j--;
-                if(j >= 0) {
+                if (j >= 0) {
                     check = t[j].compareTo(key);
                 }
             }
-            t[j+1] = key;
+            t[j + 1] = key;
         }
     }
     /**.
