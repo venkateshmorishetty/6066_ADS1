@@ -95,7 +95,6 @@ class Teams {
         t[size++] = newteam;
 
     }
-    
     /**.
      * { print the obj array after sorting }
      */
@@ -126,7 +125,7 @@ class Teams {
  * Class for sort.
  */
 class Sort {
-    /**
+    /**.
      * { sorts the array }
      *
      * @param      t     { array of teams }
@@ -148,7 +147,7 @@ class Sort {
             t[i] = t[min];
             t[min] = temp;
         }
-    }  
+    }
 }
 /**
  * { solution class }.
