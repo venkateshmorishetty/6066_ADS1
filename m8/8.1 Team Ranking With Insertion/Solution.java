@@ -33,11 +33,20 @@ class Team {
 class Teams {
 	Team[] t = new Team[10];
 	int size = 0;
-	public void makingTeamobj(String[] l) {
-		Team newteam = new Team(l[0], Integer.parseInt(l[1]), Integer.parseInt(l[2]), Integer.parseInt(l[3]));
+	/**
+	 * { making team object }.
+	 *
+	 * @param      l     { parameter_description }
+	 */
+	public void makingTeamobj(final String[] l) {
+		Team newteam = new Team(l[0], Integer.parseInt(l[1]),
+			Integer.parseInt(l[2]), Integer.parseInt(l[2 + 1]));
 		t[size++] = newteam;
 
 	}
+	/**
+	 * { sorts the array of objects }.
+	 */
 	public void sorting() {
 		int min;
 		for (int i = 0; i < size - 1; i++) {
@@ -48,7 +57,7 @@ class Teams {
 				if (check == 1) {
 					min = j;
 				}
-				j++; 
+				j++;
 			}
 			Team temp = t[i];
 			t[i] = t[min];
@@ -56,11 +65,25 @@ class Teams {
 		}
 	}
 }
-class Solution {
-	public static void main(String[] args) {
+/**
+ * { solution class }.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor.
+	}
+	/**
+	 * { main function }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Teams teams = new Teams();
 		Scanner sc = new Scanner(System.in);
-		while(sc.hasNext()) {
+		while (sc.hasNext()) {
 			String[] line = sc.nextLine().split(",");
 			teams.makingTeamobj(line);
 		}
