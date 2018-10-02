@@ -95,10 +95,27 @@ class Teams {
         t[size++] = newteam;
 
     }
+    /**.
+     * { print the obj array after sorting }
+     */
+    public void print() {
+        for (int i = 0; i < size - 1; i++) {
+            System.out.print(t[i].getname() + ",");
+        }
+        System.out.print(t[size - 1].getname());
+    }
+    public int getsize() {
+        return size;
+    }
+    public Team[] getarray() {
+        return t;
+    }
+}
+class sort {
     /**
      * { sorts the array of objects }.
      */
-    public void sorting() {
+    public void sorting(Team[] t, int size) {
         for (int i = 1; i < size; i++) {
             Team key = t[i];
             int j = i - 1;
@@ -112,15 +129,6 @@ class Teams {
             }
             t[j + 1] = key;
         }
-    }
-    /**.
-     * { print the obj array after sorting }
-     */
-    public void print() {
-        for (int i = 0; i < size - 1; i++) {
-            System.out.print(t[i].getname() + ",");
-        }
-        System.out.print(t[size - 1].getname());
     }
 }
 /**
@@ -140,12 +148,13 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Teams teams = new Teams();
+        sort s = new sort();
         Scanner sc = new Scanner(System.in);
         while (sc.hasNext()) {
             String[] line = sc.nextLine().split(",");
             teams.makingTeamobj(line);
         }
-        teams.sorting();
+        s.sorting(teams.getarray(), teams.getsize());
         teams.print();
     }
 }
