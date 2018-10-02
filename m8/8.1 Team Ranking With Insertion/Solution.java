@@ -87,7 +87,7 @@ class Teams {
     /**
      * { making team object }.
      *
-     * @param      l     { parameter_description }
+     * @param      l     { line }
      */
     public void makingTeamobj(final String[] l) {
         Team newteam = new Team(l[0], Integer.parseInt(l[1]),
