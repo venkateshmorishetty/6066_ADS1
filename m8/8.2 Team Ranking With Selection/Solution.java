@@ -48,7 +48,7 @@ class Teams {
 			while(check == 1 && j >= 0) {
 				t[j+1] = t[j];
 				j--;
-				if(j > 0) {
+				if(j >= 0) {
 					check = t[j].compareTo(key);
 				}
 			}
