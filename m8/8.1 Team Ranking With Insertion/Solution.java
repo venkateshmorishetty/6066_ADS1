@@ -35,7 +35,7 @@ class Team {
 }
 class Teams {
 	Team[] t = new Team[10];
-	int size = 0;
+	private int size = 0;
 	/**
 	 * { making team object }.
 	 *
@@ -67,6 +67,14 @@ class Teams {
 			t[min] = temp;
 		}
 	}
+	/**
+	 * Gets the size.
+	 *
+	 * @return     The size.
+	 */
+	public int getSize() {
+		return size;
+	}
 }
 /**
  * { solution class }.
@@ -91,9 +99,9 @@ final class Solution {
 			teams.makingTeamobj(line);
 		}
 		teams.sorting();
-		for (int i = 0; i < teams.size - 1; i++) {
+		for (int i = 0; i < teams.getSize() - 1; i++) {
 			System.out.print(teams.t[i].getname() + ",");
 		}
-		System.out.print(teams.t[teams.size - 1].getname());
+		System.out.print(teams.t[teams.getSize() - 1].getname());
 	}
 }
