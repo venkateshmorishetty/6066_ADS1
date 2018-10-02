@@ -50,7 +50,7 @@ class Team {
      */
     public int compareTo(final Team that) {
         if (this.wins < that.wins) {
-            return 1; 
+            return 1;
         } else if (this.wins == that.wins) {
             if (this.loss > that.loss) {
                 return 1;
@@ -75,11 +75,11 @@ class Teams {
     /**
      * { initial size }.
      */
-    private int initialsize  = 10;
+    private final int initialsize  = 10;
     /**
      * { teams object array }.
      */
-    Team[] t = new Team[initialsize];
+    private Team[] t = new Team[initialsize];
     /**
      * { size of the array }.
      */
@@ -115,13 +115,14 @@ class Teams {
             t[min] = temp;
         }
     }
-    /**
-     * Gets the size.
-     *
-     * @return     The size.
+    /**.
+     * { print the obj array after sorting }
      */
-    public int getSize() {
-        return size;
+    public void print() {
+        for (int i = 0; i < size - 1; i++) {
+            System.out.print(t[i].getname() + ",");
+        }
+        System.out.print(t[size - 1].getname());
     }
 }
 /**
@@ -147,9 +148,6 @@ final class Solution {
             teams.makingTeamobj(line);
         }
         teams.sorting();
-        for (int i = 0; i < teams.getSize() - 1; i++) {
-            System.out.print(teams.t[i].getname() + ",");
-        }
-        System.out.print(teams.t[teams.getSize() - 1].getname());
+        teams.print();
     }
 }
