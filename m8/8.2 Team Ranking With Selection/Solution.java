@@ -104,9 +104,19 @@ class Teams {
         }
         System.out.print(t[size - 1].getname());
     }
+    /**.
+     * { size method }
+     *
+     * @return     { return size }
+     */
     public int getsize() {
         return size;
     }
+    /**.
+     * { return array }
+     *
+     * @return     { t }
+     */
     public Team[] getarray() {
         return t;
     }
@@ -115,13 +125,13 @@ class Teams {
  * Class for sort.
  */
 class Sort {
-    /**
+    /**.
      * { sorts the array }
      *
      * @param      t     { array of teams }
      * @param      size  The size
      */
-    public void sorting(Team[] t, int size) {
+    public void sorting(final Team[] t, final int size) {
         for (int i = 1; i < size; i++) {
             Team key = t[i];
             int j = i - 1;
