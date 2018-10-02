@@ -127,7 +127,8 @@ class Teams {
 class Sort {
     /**.
      * { sorts the array }
-     *
+     * {the time complexity is O(n^2) because of using two loops
+     * which takes n^2 complexity}
      * @param      t     { array of teams }
      * @param      size  The size
      */
