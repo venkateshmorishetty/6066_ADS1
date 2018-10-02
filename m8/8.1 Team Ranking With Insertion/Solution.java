@@ -1,14 +1,17 @@
-import java.util.*;
+import java.util.Scanner;
 class Team {
-	String name;
-	int wins;
-	int loss;
-	int draws;
+	private String name;
+	private int wins;
+	private int loss;
+	private int draws;
 	public Team(final String n, final int w, final int l, final int d) {
 		name = n;
 		wins = w;
 		loss = l;
 		draws = d;
+	} 
+	public String getname() {
+		return name;
 	}
 	public int compareTo(Team that) {
 		if (this.wins < that.wins) {
@@ -89,8 +92,8 @@ final class Solution {
 		}
 		teams.sorting();
 		for (int i = 0; i < teams.size - 1; i++) {
-			System.out.print(teams.t[i].name + ",");
+			System.out.print(teams.t[i].getname() + ",");
 		}
-		System.out.print(teams.t[teams.size - 1].name);
+		System.out.print(teams.t[teams.size - 1].getname());
 	}
 }
