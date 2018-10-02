@@ -4,7 +4,7 @@ class Team {
 	int wins;
 	int loss;
 	int draws;
-	public Team(String n, int w, int l, int d) {
+	public Team(final String n, final int w, final int l, final int d) {
 		name = n;
 		wins = w;
 		loss = l;
