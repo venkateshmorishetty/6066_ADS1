@@ -1,19 +1,43 @@
 import java.util.Scanner;
 class Team {
+	/**
+	 * { name of the team }.
+	 */
 	private String name;
+	/**
+	 * { number of wins }.
+	 */
 	private int wins;
+	/**
+	 * { number of losses }.
+	 */
 	private int loss;
+	/**
+	 * { number of draws }.
+	 */
 	private int draws;
-	public Team(final String n, final int w, final int l, final int d) {
+	Team(final String n, final int w, final int l, final int d) {
 		name = n;
 		wins = w;
 		loss = l;
 		draws = d;
-	} 
+	}
+	/**
+	 * { returns the name }.
+	 *
+	 * @return     { name of the team }.
+	 */
 	public String getname() {
 		return name;
 	}
-	public int compareTo(Team that) {
+	/**
+	 * { compare current obj with that obj }.
+	 *
+	 * @param      that  The that
+	 *
+	 * @return     { -1 if less 0 equal +1 grater }.
+	 */
+	public int compareTo(final Team that) {
 		if (this.wins < that.wins) {
 			return 1; 
 		} else if (this.wins == that.wins) {
@@ -33,8 +57,17 @@ class Team {
 		}
 	}
 }
+/**
+ * Class for teams.
+ */
 class Teams {
+	/**
+	 * { teams object array }.
+	 */
 	Team[] t = new Team[10];
+	/**
+	 * { size of the array }.
+	 */
 	private int size = 0;
 	/**
 	 * { making team object }.
