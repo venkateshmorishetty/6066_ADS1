@@ -97,6 +97,8 @@ class Teams {
     }
     /**.
      * { print the obj array after sorting }
+     * {time complexity is O(n) because to print all
+     * elements loop runs 0 to n}
      */
     public void print() {
         for (int i = 0; i < size - 1; i++) {
@@ -127,7 +129,8 @@ class Teams {
 class Sort {
     /**.
      * { sorts the array }
-     *
+     * {time complexity is O(n^2) because we use two
+     * loops which takes n^2 complexity}
      * @param      t     { array of teams }
      * @param      size  The size
      */
