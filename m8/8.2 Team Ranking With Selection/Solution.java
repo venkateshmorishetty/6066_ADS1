@@ -49,7 +49,7 @@ class Teams {
 				t[j+1] = t[j];
 				j--;
 				if(j > 0) {
-					check = t[i].compareTo(t[j]);
+					check = t[j].compareTo(t[i]);
 				}
 			}
 			t[j+1] = key;
