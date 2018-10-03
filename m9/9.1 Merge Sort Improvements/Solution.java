@@ -1,25 +1,54 @@
 import java.util.Scanner;
+/**
+ * Class for merge.
+ */
 class merge {
-
-	public void sort(Comparable[] a) {
+	/**
+	 * { checks array is sorted or not }.
+	 *
+	 * @param      a     { array }
+	 */
+	public void sort(final Comparable[] a) {
 		Comparable[] aux = a.clone();
 		sort(aux, a, 0, a.length - 1);
 		assert isSorted(a);
 	}
-
-	public void insertionsort(Comparable[] a, int low, int high) {
+	/**
+	 * { insertion sort }.
+	 *
+	 * @param      a     { array }
+	 * @param      low   The low
+	 * @param      high  The high
+	 */
+	public void insertionsort(final Comparable[] a, final int low, final int high) {
 		for(int i = low; i <= high; i++) {
 			for(int j = i; j > low && less(a[j], a[j - 1]); j--) {
 				exch(a, j, j - 1);
 			}
 		}
 	}
-	public void exch(Object[] a, int i, int j) {
+	/**
+	 * { exchanges }.
+	 *
+	 * @param      a     { array }
+	 * @param      i     { first value }
+	 * @param      j     { second value }
+	 */
+	public void exch(final Object[] a, final int i, final int j) {
 		Object swap = a[i];
 		a[i] = a[j];
 		a[j] = swap;
 	}
-	public void sort(Comparable[] array, Comparable[] aux, int low, int high) {
+	/**
+	 * { sort method }.
+	 *
+	 * @param      array  The array
+	 * @param      aux    The auxiliary
+	 * @param      low    The low
+	 * @param      high   The high
+	 */
+	public void sort(final Comparable[] array, final Comparable[] aux,
+		final int low, final int high) {
 		if(high <= low + 7) {
 			insertionsort(aux, low, high);
 			System.out.println("Insertion sort method invoked...");
@@ -37,26 +66,60 @@ class merge {
 		}
 		merge(array, aux, low, mid, high);
 	}
-	public void  merge(Comparable[] array, Comparable[] aux, int low,int  mid, int high) {
+	/**
+	 * { merges two sub arrays }.
+	 *
+	 * @param      array  The array
+	 * @param      aux    The auxiliary
+	 * @param      low    The low
+	 * @param      mid    The middle
+	 * @param      high   The high
+	 */
+	public void  merge(final Comparable[] array, final Comparable[] aux, final int low,
+		final int  mid, final int high) {
 			assert isSorted(array, low, mid);
 			assert isSorted(array, mid + 1, high);
 			int i = low, j = mid + 1;
-			for(int k = low; k <= high; k++) {
-				if(i>mid) aux[k] = array[j++];
-				else if(j>high) aux[k] = array[i++];
-				else if(less(array[j], array[i])) aux[k] = array[j++];
+			for (int k = low; k <= high; k++) {
+				if (i > mid) aux[k] = array[j++];
+				else if (j > high) aux[k] = array[i++];
+				else if (less(array[j], array[i])) aux[k] = array[j++];
 				else aux[k] = array[i++];
 			}
 			assert isSorted(aux, low, high);
 		
 	}
+	/**
+	 * { less function }.
+	 *
+	 * @param      first  The first
+	 * @param      sec    The security
+	 *
+	 * @return     { return true if less or false }
+	 */
 	public boolean less(Comparable first, Comparable sec) {
 	
 		return first.compareTo(sec) < 0;
 	}
+	/**
+	 * Determines if sorted.
+	 *
+	 * @param      a     { parameter_description }
+	 *
+	 * @return     True if sorted, False otherwise.
+	 */
 	public boolean isSorted(Comparable[] a) {
 		return isSorted(a, 0, a.length - 1);
 	}
+	/**
+	 * Determines if sorted.
+	 *
+	 * @param      array  The array
+	 * @param      low    The low
+	 * @param      high   The high
+	 *
+	 * @return     True if sorted, False otherwise.
+	 */
 	public boolean isSorted(Comparable[] array, int low, int high) {
 		for(int i = low + 1; i <= high; i++) {
 			if(less(array[i], array[i - 1])) {
@@ -65,6 +128,13 @@ class merge {
 		}
 		return true;
 	}
+	/**
+	 * { display sorted array }.
+	 *
+	 * @param      aux   The auxiliary
+	 *
+	 * @return     { string }
+	 */
 	public String show(Object[] aux) {
 		String result = "[";
 		for(int i = 0; i < aux.length - 1; i++) {
@@ -74,7 +144,21 @@ class merge {
 	}
 
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	public Solution() {
+		//constructor.
+	}
+	/**
+	 * { main method }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		merge m = new merge();
