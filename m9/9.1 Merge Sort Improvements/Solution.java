@@ -97,7 +97,7 @@ class merge {
 	 *
 	 * @return     { return true if less or false }
 	 */
-	public boolean less(Comparable first, Comparable sec) {
+	public boolean less(final Comparable first, final Comparable sec) {
 	
 		return first.compareTo(sec) < 0;
 	}
@@ -108,7 +108,7 @@ class merge {
 	 *
 	 * @return     True if sorted, False otherwise.
 	 */
-	public boolean isSorted(Comparable[] a) {
+	public boolean isSorted(final Comparable[] a) {
 		return isSorted(a, 0, a.length - 1);
 	}
 	/**
@@ -120,9 +120,10 @@ class merge {
 	 *
 	 * @return     True if sorted, False otherwise.
 	 */
-	public boolean isSorted(Comparable[] array, int low, int high) {
-		for(int i = low + 1; i <= high; i++) {
-			if(less(array[i], array[i - 1])) {
+	public boolean isSorted(final Comparable[] array, final int low,
+		final int high) {
+		for (int i = low + 1; i <= high; i++) {
+			if (less(array[i], array[i - 1])) {
 				return false;
 			}
 		}
@@ -135,10 +136,10 @@ class merge {
 	 *
 	 * @return     { string }
 	 */
-	public String show(Object[] aux) {
+	public String show(final Object[] aux) {
 		String result = "[";
-		for(int i = 0; i < aux.length - 1; i++) {
-			result +=  aux[i]+", ";
+		for (int i = 0; i < aux.length - 1; i++) {
+			result +=  aux[i] + ", ";
 		} result += aux[aux.length - 1] + "]";
 		return result;
 	}
@@ -147,11 +148,11 @@ class merge {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	public Solution() {
+	Solution() {
 		//constructor.
 	}
 	/**
@@ -159,10 +160,10 @@ class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		merge m = new merge();
-		while(sc.hasNext()) {
+		while (sc.hasNext()) {
 			String[] a = sc.nextLine().split(",");
 			m.sort(a);
 			System.out.println(m.show(a));
