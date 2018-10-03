@@ -21,8 +21,8 @@ class merge {
 	 * @param      high  The high
 	 */
 	public void insertionsort(final Comparable[] a, final int low, final int high) {
-		for(int i = low; i <= high; i++) {
-			for(int j = i; j > low && less(a[j], a[j - 1]); j--) {
+		for (int i = low; i <= high; i++) {
+			for (int j = i; j > low && less(a[j], a[j - 1]); j--) {
 				exch(a, j, j - 1);
 			}
 		}
@@ -48,8 +48,8 @@ class merge {
 	 * @param      high   The high
 	 */
 	public void sort(final Comparable[] array, final Comparable[] aux,
-		final int low, final int high) {
-		if(high <= low + 7) {
+	                 final int low, final int high) {
+		if (high <= low + 7) {
 			insertionsort(aux, low, high);
 			System.out.println("Insertion sort method invoked...");
 			return;
@@ -57,8 +57,8 @@ class merge {
 		int mid = (low + high) / 2;
 		sort(aux, array, low, mid);
 		sort(aux, array, mid + 1, high);
-		if(!less(array[mid + 1], array[mid])) {
-			for(int t = low; t <= high; t++) {
+		if (!less(array[mid + 1], array[mid])) {
+			for (int t = low; t <= high; t++) {
 				aux[t] = array[t];
 			}
 			System.out.println("Array is already sorted. So, skipped the call to merge...");
@@ -76,18 +76,18 @@ class merge {
 	 * @param      high   The high
 	 */
 	public void  merge(final Comparable[] array, final Comparable[] aux, final int low,
-		final int  mid, final int high) {
-			assert isSorted(array, low, mid);
-			assert isSorted(array, mid + 1, high);
-			int i = low, j = mid + 1;
-			for (int k = low; k <= high; k++) {
-				if (i > mid) aux[k] = array[j++];
-				else if (j > high) aux[k] = array[i++];
-				else if (less(array[j], array[i])) aux[k] = array[j++];
-				else aux[k] = array[i++];
-			}
-			assert isSorted(aux, low, high);
-		
+	                   final int  mid, final int high) {
+		assert isSorted(array, low, mid);
+		assert isSorted(array, mid + 1, high);
+		int i = low, j = mid + 1;
+		for (int k = low; k <= high; k++) {
+			if (i > mid) aux[k] = array[j++];
+			else if (j > high) aux[k] = array[i++];
+			else if (less(array[j], array[i])) aux[k] = array[j++];
+			else aux[k] = array[i++];
+		}
+		assert isSorted(aux, low, high);
+
 	}
 	/**
 	 * { less function }.
@@ -98,7 +98,7 @@ class merge {
 	 * @return     { return true if less or false }
 	 */
 	public boolean less(final Comparable first, final Comparable sec) {
-	
+
 		return first.compareTo(sec) < 0;
 	}
 	/**
@@ -121,7 +121,7 @@ class merge {
 	 * @return     True if sorted, False otherwise.
 	 */
 	public boolean isSorted(final Comparable[] array, final int low,
-		final int high) {
+	                        final int high) {
 		for (int i = low + 1; i <= high; i++) {
 			if (less(array[i], array[i - 1])) {
 				return false;
