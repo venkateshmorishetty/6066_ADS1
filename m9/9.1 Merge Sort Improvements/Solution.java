@@ -149,13 +149,13 @@ class merge {
  * Class for solution.
  */
 final class Solution {
-	/**
+	/**.
 	 * Constructs the object.
 	 */
 	Solution() {
 		//constructor.
 	}
-	/**
+	/**.
 	 * { main method }
 	 *
 	 * @param      args  The arguments
