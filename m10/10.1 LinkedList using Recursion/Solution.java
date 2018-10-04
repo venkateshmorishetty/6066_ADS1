@@ -26,12 +26,17 @@ class Linkedlist {
         /**
          * Constructs the object.
          *
-         * @param      data  The data
+         * @param      d  The data
          */
-        public Node(final int d) {
+        private Node(final int d) {
             data = d;
         }
     }
+    /**
+     * Gets the head.
+     *
+     * @return     The head.
+     */
     public Node getHead() {
         return head;
     }

@@ -1,7 +1,4 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:29:12: Unused @param tag for 'data'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:31:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:31:31: Expected @param tag for 'd'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:35:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:17: Class Node should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
