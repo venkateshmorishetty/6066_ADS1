@@ -3,7 +3,7 @@ import java.util.Scanner;
  * Class for merge.
  */
 class Merge {
-    /**
+    /**.
      * { cutoff}
      */
     private final int cutoff = 7;

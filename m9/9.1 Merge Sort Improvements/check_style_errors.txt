@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:6: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 1 errors.
