@@ -86,7 +86,7 @@ class Linkedlist {
      *
      * @param      curr       The curr
      * @param      prev       The previous
-     * { time complexity for reverse is O(n) because to 
+     * { time complexity for reverse is O(n) because to
      * reverse linked list number of function callings will be n}
      * @throws     Exception  { if there are no elements throws exception }.
      */
