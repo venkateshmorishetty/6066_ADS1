@@ -46,6 +46,7 @@ class Linkedlist {
 		if(curr.next == null) {
 			head = curr;
 			head.next = prev;
+			temp = head;
 			return;
 		}
 		Node temp = curr.next;
@@ -54,7 +55,6 @@ class Linkedlist {
 	}
 
 	public void display() {
-		temp = head;
 		while(temp.next!=null){
 			System.out.print(temp.data +", ");
 			temp = temp.next;
