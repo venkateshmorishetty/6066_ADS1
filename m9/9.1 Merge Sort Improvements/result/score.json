@@ -1,1 +1,1 @@
-{"problem_id": "ads1_m9_a1", "user_id": "venkateshmorishetty", "score": "4/4", "check_style_score": "0/1"}
+{"version": "1", "message": "ERROR: Hidden Testcases server unreachable.", "problem_id": "ads1_m9_a1", "user_id": "venkateshmorishetty", "score": {"sample": {"0": {"execution_time": 0.3309030532836914, "passed": true}, "1": {"execution_time": 0.24364066123962402, "passed": true}, "2": {"execution_time": 0.25293970108032227, "passed": true}, "3": {"execution_time": 1.46412992477417, "passed": true}}}, "check_style_score": "0/1"}

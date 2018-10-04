@@ -1,16 +1,6 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:5:7: Name 'merge' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:23: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:52:35: '7' is a magic number. [MagicNumber]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:64: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:78: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:78:22: Method Name 'merge' must not equal the enclosing class name. [MethodName]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:84: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:85: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:86: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:87: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:151:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:55:19: '7' is a magic number. [MagicNumber]
+[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:69:13: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:163:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 3 errors.
