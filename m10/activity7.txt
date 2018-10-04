@@ -1,0 +1,12 @@
+fact(5) 
+	5 * fact(4)
+		4 * fact(3) 
+			3 * fact(2)
+				2 * fact(1)
+					1
+
+the number of function calls for fact(5) is 5.
+for n number of function calls are n
+the time complexity is O(n).
+the factorial is 120.
+  
