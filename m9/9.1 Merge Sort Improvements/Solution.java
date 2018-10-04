@@ -4,6 +4,10 @@ import java.util.Scanner;
  */
 class Merge {
     /**
+     * { cutoff}
+     */
+    private final int cutoff = 7;
+    /**
      * { checks array is sorted or not }.
      *
      * @param      a     { array }
@@ -52,8 +56,7 @@ class Merge {
      */
     public void sort(final Comparable[] array, final Comparable[] aux,
                      final int low, final int high) {
-        int num = 7;
-        if (high <= low + num) {
+        if (high <= low + cutoff) {
             insertionsort(aux, low, high);
             System.out.println("Insertion sort method invoked...");
             return;
@@ -65,8 +68,8 @@ class Merge {
             for (int t = low; t <= high; t++) {
                 aux[t] = array[t];
             }
-            System.out.println
-            ("Array is already sorted. So, skipped the call to merge...");
+            System.out.println(
+            "Array is already sorted. So, skipped the call to merge...");
             return;
         }
         merge(array, aux, low, mid, high);
@@ -164,7 +167,7 @@ final class Solution {
     /**.
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         //constructor.
     }
     /**.

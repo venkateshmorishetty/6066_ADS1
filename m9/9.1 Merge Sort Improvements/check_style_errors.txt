@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:55:19: '7' is a magic number. [MagicNumber]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:69:13: '(' should be on the previous line. [MethodParamPad]
-[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:163:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\msit\ADS1\6066_ADS1\m9\9.1 Merge Sort Improvements\Solution.java:6: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
