@@ -1,19 +1,7 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:9:14: Variable 'head' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:9:19: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:9:19: Variable 'temp' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:13:13: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:21:21: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:25:22: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:31:17: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:31:29: Parameter data should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:31:33: 'data' hides a field. [HiddenField]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:82:29: Parameter curr should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:82:40: Parameter prev should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:100:42: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:111: Class Solution should be declared as final. [FinalClass]
-[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:144: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:29:12: Unused @param tag for 'data'. [JavadocMethod]
+[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:31:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:31:31: Expected @param tag for 'd'. [JavadocMethod]
+[ERROR] D:\msit\ADS1\6066_ADS1\m10\10.1 LinkedList using Recursion\Solution.java:35:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 4 errors.
