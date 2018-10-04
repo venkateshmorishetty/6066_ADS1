@@ -14,7 +14,7 @@ class Linkedlist {
     /**
      * Class for node.
      */
-    class Node {
+    final class Node {
         /**
          * { data }.
          */
@@ -48,6 +48,8 @@ class Linkedlist {
      *
      * @throws     Exception  { if index is less then size
      * or 0 throws exception }.
+     *  {time complexity for inserAt is O(n) because if we give pos as last
+     *  then number of function calls will be n-1 nearly n}.
      */
     public void insertAt(final int index, final int item) throws Exception {
         if (index > size || index < 0) {
@@ -84,7 +86,8 @@ class Linkedlist {
      *
      * @param      curr       The curr
      * @param      prev       The previous
-     *
+     * { time complexity for reverse is O(n) because to 
+     * reverse linked list number of function callings will be n}
      * @throws     Exception  { if there are no elements throws exception }.
      */
     public void reverse(final Node curr, final Node prev)
@@ -104,6 +107,7 @@ class Linkedlist {
     }
     /**
      * { print the entire list }.
+     * { time complexity for display is O(n) because while loop runs n times }
      */
     public void display() {
         while (temp.next != null) {
