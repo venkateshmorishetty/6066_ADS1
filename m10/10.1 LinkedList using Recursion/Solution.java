@@ -1,15 +1,47 @@
 import java.util.Scanner;
+/**
+ * Class for linkedlist.
+ */
 class Linkedlist {
+	/**
+	 * { head node }.
+	 */
 	Node head,temp;
+	/**
+	 * { size variable }.
+	 */
 	int size = 0;
+	/**
+	 * Class for node.
+	 */
 	class Node {
+		/**
+		 * { data }.
+		 */
 		int data;
+		/**
+		 * { next node address }.
+		 */
 		Node next;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      data  The data
+		 */
 		public Node(int data) {
 			this.data = data;
 		}
 	}
-	public void insertAt(int index, int item) throws Exception {
+	/**
+	 * { inserts at given position }.
+	 *
+	 * @param      index      The index
+	 * @param      item       The item
+	 *
+	 * @throws     Exception  { if index is less then size
+	 * or 0 throws exception }.
+	 */
+	public void insertAt(final int index, final int item) throws Exception {
 		if(index > size || index < 0) {
 			throw new Exception("Can't insert at this position.");
 		}
@@ -39,6 +71,14 @@ class Linkedlist {
 			}
 		}
 	}
+	/**
+	 * { revers the given linked list }.
+	 *
+	 * @param      curr       The curr
+	 * @param      prev       The previous
+	 *
+	 * @throws     Exception  { if there are no elements throws exception }.
+	 */
 	public void reverse(Node curr, Node prev) throws Exception {
 		if(size == 0) {
 			throw new Exception("No elements to reverse.");
@@ -53,7 +93,9 @@ class Linkedlist {
 		curr.next = prev;
 		reverse(temp, curr);
 	}
-
+	/**
+	 * { print the entire list }.
+	 */
 	public void display() {
 		while(temp.next!=null){
 			System.out.print(temp.data +", ");
@@ -63,10 +105,16 @@ class Linkedlist {
 		temp = head;
 	}
 }
-
-
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * { main function }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Linkedlist l = new Linkedlist();
 		Scanner sc = new Scanner(System.in);
 		while(sc.hasNext()) {
