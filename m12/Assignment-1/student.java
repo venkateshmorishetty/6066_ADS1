@@ -44,10 +44,10 @@ class student {
 	};
 	static Comparator<student> secondComparator = new Comparator<student>() {
 		public int compare(student s1, student s2) {
-			if(s1.cast.compareTo(s2.cast)!=0) {
+			// if(s1.cast.compareTo(s2.cast)!=0) {
 				return s1.cast.compareTo(s2.cast);
-			} 
-			return s1.totalscore - s2.totalscore;
+			// } 
+			// return s1.totalscore - s2.totalscore;
 		}
 	};
 }

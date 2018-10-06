@@ -69,8 +69,8 @@ class studentsinfo {
 		if(vacancies==0) {
 			return;
 		} else {
-			// selection sort = new selection();
-			// sort.sort(list, size, student.secondComparator);
+			selection sort = new selection();
+			sort.sort(list, size, student.secondComparator);
 			for (int k = 0; k < size; k++) {
 				int flag = 1;
 				if(vacancies==0) {
