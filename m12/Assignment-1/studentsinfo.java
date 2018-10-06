@@ -66,27 +66,27 @@ class studentsinfo {
 			result[temp++] = list[i];
 			vacancies--;
 		}
-		// if(vacancies==0) {
-		// 	return;
-		// } else {
-		// 	selection sort = new selection();
-		// 	sort.sort(list, size, student.secondComparator);
-		// 	for (int k = 0; k < size; k++) {
-		// 		int flag = 1;
-		// 		if(vacancies==0) {
-		// 			return;
-		// 		}
-		// 		for(int j = 0; j < temp; j++) {
-		// 			if(result[j].name.equals(list[k])){
-		// 				flag = 0;
-		// 			}
-		// 		}
-		// 		if(flag == 1) {
-		// 			result[temp++] = list[k];
-		// 			vacancies--;
-		// 		}	
-		// 	}
-		// }
+		if(vacancies==0) {
+			return;
+		} else {
+			// selection sort = new selection();
+			// sort.sort(list, size, student.secondComparator);
+			for (int k = 0; k < size; k++) {
+				int flag = 1;
+				if(vacancies==0) {
+					return;
+				}
+				for(int j = 0; j < temp; j++) {
+					if(result[j].name.equals(list[k])){
+						flag = 0;
+					}
+				}
+				if(flag == 1) {
+					result[temp++] = list[k];
+					vacancies--;
+				}	
+			}
+		}
 			
 	}
 }
