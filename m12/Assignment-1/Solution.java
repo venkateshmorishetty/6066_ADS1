@@ -18,7 +18,7 @@ final class Solution {
 		int scvacanicies = sc.nextInt();
 		int stvacanicies = sc.nextInt();
 		sc.nextLine();
-		for(int i = 0; i < noofstudents; i++) {
+		for (int i = 0; i < noofstudents; i++) {
 			String[] arr = sc.nextLine().split(",");
 			String[] date = arr[1].split("-");
 			Date d = new Date(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
@@ -33,5 +33,6 @@ final class Solution {
 		sort.sort(s.list, s.size,student.reservationComparator);
 		System.out.println();
 		s.vacancies( noofvacancies, stvacanicies, scvacanicies, bcvacanicies, unreseved);
+		s.second();
 	}
 }
