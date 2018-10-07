@@ -56,7 +56,7 @@ class Quick {
     public int partition(final Comparable[] a, final int low,
         final int high) {
         int i =low;
-        int j = high - 1;
+        int j = high + 1;
         while (true) {
             while (less(a[++i], a[low])) {
                 if (i == high) {
