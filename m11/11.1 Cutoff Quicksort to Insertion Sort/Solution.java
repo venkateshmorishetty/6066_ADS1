@@ -52,10 +52,18 @@ class Quick {
         sort(array, low, temp - 1, cutOff);
         sort(array, temp + 1, high, cutOff);
     }
-
+    /**
+     * { partition function }.
+     *
+     * @param      a     { parameter_description }
+     * @param      low   The low
+     * @param      high  The high
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int partition(final Comparable[] a, final int low,
         final int high) {
-        int i =low;
+        int i = low;
         int j = high + 1;
         while (true) {
             while (less(a[++i], a[low])) {
@@ -76,7 +84,13 @@ class Quick {
         exch(a, low, j);
         return j;
     }
-
+    /**
+     * Returns a string representation of the object.
+     *
+     * @param      a     { parameter_description }
+     *
+     * @return     String representation of the object.
+     */
     public String toString(final Comparable[] a) {
         String str = "[";
         for (int i = 0; i < a.length - 1; i++) {
@@ -144,7 +158,7 @@ final class Solution {
         Scanner sc = new Scanner(System.in);
         Quick q = new Quick();
         int testcases = sc.nextInt();
-        for(int i = 0; i < testcases; i++) {
+        for (int i = 0; i < testcases; i++) {
             int j = sc.nextInt();
             sc.nextLine();
             String s = sc.nextLine();

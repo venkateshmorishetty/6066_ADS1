@@ -1,11 +1,7 @@
 Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:39:8: Unused @param tag for 'aux'. [JavadocMethod]
 [ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:44:35: Expected @param tag for 'cutOff'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:56:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:58:16: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:80:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:83:24: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:83:25: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:147:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:97:24: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:97:25: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 4 errors.
