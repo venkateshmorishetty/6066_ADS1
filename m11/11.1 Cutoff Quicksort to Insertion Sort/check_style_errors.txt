@@ -6,6 +6,6 @@ Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:80:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:83:24: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:83:25: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:147:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\msit\ADS1\6066_ADS1\m11\11.1 Cutoff Quicksort to Insertion Sort\Solution.java:147:12: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 8 errors.

@@ -44,7 +44,7 @@ class Quick {
         final int high, final int cutOff) {
         if (high <= low + cutOff - 1) {
             insertionsort(array, low, high);
-            System.out.println("insertionsort called");
+            System.out.println("insertionSort called");
             return;
         }
         int temp = partition(array, low, high);

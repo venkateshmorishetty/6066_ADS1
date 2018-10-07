@@ -27,25 +27,25 @@ insertionSort called
 Your Output: 
 [A, O, R, P, E, M, S, X, T, L, E]
 [A, O, R, P, E, M, S, X, T, L, E]
-insertionsort called
+insertionSort called
 [A, O, R, P, E, M, S, X, T, L, E]
-insertionsort called
+insertionSort called
 [A, O, P, R, E, M, S, X, T, L, E]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [A, O, P, R, E, M, S, T, X, L, E]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [A, O, P, R, E, M, S, T, X, E, L]
 [E, A, E, Y, Q, U, S, S, T, I, O, N]
-insertionsort called
+insertionSort called
 [A, E, E, I, Q, U, S, S, T, Y, O, N]
 [A, E, E, I, Q, U, S, S, T, Y, O, N]
-insertionsort called
+insertionSort called
 [A, E, E, I, Q, U, S, S, T, Y, O, N]
-insertionsort called
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
+insertionSort called
 [A, E, E, I, Q, S, S, T, U, Y, N, O]
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -90,36 +90,36 @@ insertionSort called
 [all, bad, dug, jam, yet]
 Your Output: 
 [1, 2, 3, 4, 5, 6, 7]
-insertionsort called
+insertionSort called
 [1, 2, 3, 4, 5, 6, 7]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [1, 2, 3, 4, 5, 6, 7]
 [-9, 8, 7, 6, 5, 4, 9, -8, -7]
 [-9, 8, 7, 6, 5, 4, 9, -8, -7]
-insertionsort called
+insertionSort called
 [-9, 6, 7, 8, 5, 4, 9, -8, -7]
-insertionsort called
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
+insertionSort called
 [-9, 6, 7, 8, 4, 5, 9, -7, -8]
 [12122.45, 13212.54, 12123.44, 11121.55]
-insertionsort called
+insertionSort called
 [12122.45, 13212.54, 12123.44, 11121.55]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [12122.45, 13212.54, 11121.55, 12123.44]
 [egg, hut, men, few, jay]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [egg, hut, few, jay, men]
 [joy, owl, rap, gig, wee]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [joy, owl, gig, rap, wee]
-insertionsort called
+insertionSort called
 [fee, tap, tar, wad, was]
-insertionsort called
+insertionSort called
 [all, bad, dug, jam, yet]
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -148,26 +148,26 @@ insertionSort called
 [112, 121, 122, 123, 131, 132, 133]
 Your Output: 
 [bed, bug, dad, yes, zoo]
-insertionsort called
+insertionSort called
 [bed, bug, dad, yes, zoo]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [bed, bug, dad, yes, zoo]
-insertionsort called
+insertionSort called
 [dim, for, ilk, now, tip]
-insertionsort called
+insertionSort called
 [jot, nob, sky, sob, tag]
 [010, 001, 100, 110, 101, 1, 100]
-insertionsort called
+insertionSort called
 [001, 010, 100, 101, 110, 1, 100]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [001, 010, 100, 101, 110, 1, 100]
 [121, 112, 123, 131, 132, 133, 122]
-insertionsort called
+insertionSort called
 [112, 121, 123, 131, 132, 133, 122]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [112, 121, 123, 131, 122, 132, 133]
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -190,23 +190,23 @@ insertionSort called
 insertionSort called
 [-1, -2, -3, -4, -5, -6, -7, 1, 2, 3, 4, 5, 6, 7]
 Your Output: 
-insertionsort called
+insertionSort called
 [1234567890]
 []
 [-1, 1, -2, 2, -3, 3, -4, 4, -5, 5, -6, 6, -7, 7]
-insertionsort called
+insertionSort called
 [-1, -4, -2, -6, -3, -5, 1, 4, 3, 5, 2, 6, -7, 7]
 [-1, -2, -4, -6, -3, -5, 1, 4, 3, 5, 2, 6, -7, 7]
-insertionsort called
+insertionSort called
 [-1, -2, -4, -6, -3, -5, 1, 4, 3, 5, 2, 6, -7, 7]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [-1, -2, -4, -6, -3, -5, 1, 2, 3, 4, 5, 6, -7, 7]
-insertionsort called
+insertionSort called
 [-1, -2, -4, -6, -3, -5, 1, 2, 3, 4, 5, 6, -7, 7]
-insertionsort called
+insertionSort called
 [-1, -2, -4, -6, -3, -5, 1, 2, 3, 4, 5, 6, -7, 7]
-insertionsort called
-insertionsort called
+insertionSort called
+insertionSort called
 [-1, -2, -4, -6, -3, -5, 1, 2, 3, 4, 5, 6, -7, 7]
 ----------------------------------------
