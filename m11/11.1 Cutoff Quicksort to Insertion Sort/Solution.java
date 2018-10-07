@@ -146,6 +146,7 @@ final class Solution {
         int testcases = sc.nextInt();
         for(int i = 0; i < testcases; i++) {
             int j = sc.nextInt();
+            sc.nextLine();
             String s = sc.nextLine();
             String[] tokens = s.split(" ");
             if (tokens[0].equals("")) {
