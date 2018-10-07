@@ -32,13 +32,12 @@ class Quick {
         a[j] = swap;
     }
     /**
-     * { sort method }.
-     * { time complexity for sort is log(n)}.
+     * { sort }.
      *
-     * @param      array  The array
-     * @param      aux    The auxiliary
-     * @param      low    The low
-     * @param      high   The high
+     * @param      array   The array
+     * @param      low     The low
+     * @param      high    The high
+     * @param      cutOff  The cut off
      */
     public void sort(final Comparable[] array, final int low,
         final int high, final int cutOff) {
@@ -54,7 +53,8 @@ class Quick {
     }
     /**
      * { partition function }.
-     *
+     * { the time complexity for quick sort is nlogn in best case
+     * and O(n^2) in worst case}
      * @param      a     { parameter_description }
      * @param      low   The low
      * @param      high  The high
@@ -94,7 +94,7 @@ class Quick {
     public String toString(final Comparable[] a) {
         String str = "[";
         for (int i = 0; i < a.length - 1; i++) {
-            str += a[i]+", ";
+            str += a[i] + ", ";
         }
         str += a[a.length - 1] + "]";
         return str;
