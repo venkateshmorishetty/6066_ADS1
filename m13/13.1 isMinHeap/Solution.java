@@ -1,17 +1,21 @@
 import java.util.Scanner;
-import java.lang.Comparable;
-/**
+/**.
  * Class for heap.
  *
  * @param      <E>   { generic type }.
  */
 class Heap<E extends Comparable<E>> {
+	/**
+	 * Determines if minimum heap.
+	 * { time complexity to check whther it is minheap or not is O(n) }
+	 * @param      arr   The arr
+	 *
+	 * @return     True if minimum heap, False otherwise.
+	 */
 	public boolean isMinHeap(final E[] arr) {
 		int index = arr.length - 1;
-		// System.out.println(Arrays.toString(arr));
-		while(index > 1) {
-			// System.out.println(arr[index] +"    "+arr[index/2]);
-			if(arr[index].compareTo(arr[index/2])>=0) {
+		while (index > 1) {
+			if (arr[index].compareTo(arr[index / 2]) >= 0) {
 				index = index - 1;
 			} else {
 				return false;
@@ -30,7 +34,7 @@ final class Solution {
 	private Solution() {
 		//constructor.
 	}
-	/**
+	/**.
 	 * { main function }
 	 *
 	 * @param      args  The arguments
@@ -39,14 +43,14 @@ final class Solution {
 		Scanner sc = new Scanner(System.in);
 		String type = sc.nextLine();
 		int testcases = Integer.parseInt(sc.nextLine());
-		switch(type) {
+		switch (type) {
 			case "String":
 			Heap<String> heap = new Heap<String>();
-			for(int i = 0; i < testcases; i++) {
+			for (int i = 0; i < testcases; i++) {
 				String[] arr = sc.nextLine().split(",");
-				String[] a = new String[arr.length+1];
+				String[] a = new String[arr.length  +1];
 				int temp = 1;
-				for(int k = 0; k < arr.length; k++) {
+				for (int k = 0; k < arr.length; k++) {
 					a[temp++] = arr[k];
 				}
 				System.out.println(heap.isMinHeap(a));
@@ -57,13 +61,13 @@ final class Solution {
 			for (int i = 0; i < testcases; i++) {
 				try {
 					String[] arr = sc.nextLine().split(",");
-					Float[] a = new Float[arr.length+1];
+					Float[] a = new Float[arr.length + 1];
 					int temp = 1;
-					for(int k = 0; k < arr.length; k++) {
+					for (int k = 0; k < arr.length; k++) {
 						a[temp++] = Float.parseFloat(arr[k]);
 					}
 					System.out.println(floatobj.isMinHeap(a));	
-				} catch(Exception e) {
+				} catch (Exception e) {
 					System.out.println("false");
 				}
 			}
@@ -74,7 +78,7 @@ final class Solution {
 				String[] arr = sc.nextLine().split(",");
 				Integer[] a = new Integer[arr.length + 1];
 				int temp = 1;
-				for(int k = 0; k < arr.length; k++) {
+				for (int k = 0; k < arr.length; k++) {
 					a[temp++] = Integer.parseInt(arr[k]);
 				}
 				System.out.println(intobj.isMinHeap(a));
