@@ -1,7 +1,12 @@
-import java.util.*;
-import java.lang.*;
+import java.util.Scanner;
+import java.lang.Comparable;
+/**
+ * Class for heap.
+ *
+ * @param      <E>   { generic type }.
+ */
 class Heap<E extends Comparable<E>> {
-	public boolean isMinHeap(E[] arr) {
+	public boolean isMinHeap(final E[] arr) {
 		int index = arr.length - 1;
 		// System.out.println(Arrays.toString(arr));
 		while(index > 1) {
@@ -15,8 +20,22 @@ class Heap<E extends Comparable<E>> {
 		return true;
 	}
 }
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor.
+	}
+	/**
+	 * { main function }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String type = sc.nextLine();
 		int testcases = Integer.parseInt(sc.nextLine());
@@ -35,8 +54,8 @@ class Solution {
 			break;
 			case "Float":
 			Heap<Float> floatobj = new Heap<Float>();
-			for(int i = 0; i < testcases; i++) {
-				try{
+			for (int i = 0; i < testcases; i++) {
+				try {
 					String[] arr = sc.nextLine().split(",");
 					Float[] a = new Float[arr.length+1];
 					int temp = 1;
@@ -51,7 +70,7 @@ class Solution {
 			break;
 			case "Integer":
 			Heap<Integer> intobj = new Heap<Integer>();
-			for(int i = 0; i < testcases; i++) {
+			for (int i = 0; i < testcases; i++) {
 				String[] arr = sc.nextLine().split(",");
 				Integer[] a = new Integer[arr.length + 1];
 				int temp = 1;
@@ -63,11 +82,11 @@ class Solution {
 			break;
 			case "Double":
 			Heap<Double> doubleobj = new Heap<Double>();
-			for(int i = 0; i < testcases; i++) {
+			for (int i = 0; i < testcases; i++) {
 				String[] arr = sc.nextLine().split(",");
 				Double[] a = new Double[arr.length + 1];
 				int temp = 1;
-				for(int k = 0; k < arr.length; k++) {
+				for (int k = 0; k < arr.length; k++) {
 					a[temp++] = Double.parseDouble(arr[k]);
 				}
 				System.out.println(doubleobj.isMinHeap(a));
