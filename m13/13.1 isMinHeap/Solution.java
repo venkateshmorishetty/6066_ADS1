@@ -48,7 +48,7 @@ final class Solution {
             Heap<String> heap = new Heap<String>();
             for (int i = 0; i < testcases; i++) {
                 String[] arr = sc.nextLine().split(",");
-                String[] a = new String[arr.length  +1];
+                String[] a = new String[arr.length + 1];
                 int temp = 1;
                 for (int k = 0; k < arr.length; k++) {
                     a[temp++] = arr[k];
@@ -66,7 +66,7 @@ final class Solution {
                     for (int k = 0; k < arr.length; k++) {
                         a[temp++] = Float.parseFloat(arr[k]);
                     }
-                    System.out.println(floatobj.isMinHeap(a));  
+                    System.out.println(floatobj.isMinHeap(a));
                 } catch (Exception e) {
                     System.out.println("false");
                 }

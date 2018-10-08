@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m13\13.1 isMinHeap\Solution.java:51:54: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m13\13.1 isMinHeap\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
