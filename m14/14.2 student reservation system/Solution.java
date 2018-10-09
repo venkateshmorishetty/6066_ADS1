@@ -23,7 +23,7 @@ final class Solution {
 			String[] date = arr[1].split("-");
 			int[] dat = new int[date.length];
 			for (int j = 0; i < date.length; j++) {
-				dat[j] = Integer.parseInt(date[j]);
+				dat[j] = Integer.parseInt(date[i]);
 			}
 			// Date d = new Date(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
 			student st = new student(arr[0], dat, Integer.parseInt(arr[2]),
