@@ -39,7 +39,8 @@ class studentsinfo {
 	 */
 	public void tostring() {
 		for(int i = 0; i < size; i++) {
-			System.out.println(list[i].name+","+list[i].totalscore + "," + list[i].cast);
+			System.out.println(list[i].name + ","
+				+ list[i].totalscore + "," + list[i].cast);
 		}
 	}
 	/**
@@ -47,14 +48,20 @@ class studentsinfo {
 	 */
 	public void second() {
 		for (int i = 0; i < result.length; i++) {
-			System.out.println(result[i].name + "," + result[i].totalscore + "," + result[i].cast);
+			System.out.println(result[i].name + "," +
+				result[i].totalscore + "," + result[i].cast);
 		}
 	}
-
-
+	/**
+	 * { checks the result }.
+	 *
+	 * @param      t     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public boolean contains(final student t) {
 		for (int i = 0; i < temp; i++) {
-			if(t.name.equals(result[i].name)) {
+			if (t.name.equals(result[i].name)) {
 				return true;
 			}
 		}
@@ -79,26 +86,29 @@ class studentsinfo {
 		for (int i = 0; i < size; i++) {
 			if (!(contains(list[i]))) {
 				if (vacancies != 0) {
-					if(list[i].cast.equals("SC") && sc != 0) {
+					if(list[i].cast.equals("SC")
+						&& sc != 0) {
 						result[temp++] = list[i];
 						vacancies--;
 						sc--;
-					} else if (list[i].cast.equals("ST") && st != 0) {
+					} else if (list[i].cast.equals("ST")
+						&& st != 0) {
 						result[temp++] = list[i];
 						vacancies--;
 						st--;
-					} else if (list[i].cast.equals("BC") && bc != 0) {
+					} else if (list[i].cast.equals("BC")
+						&& bc != 0) {
 						result[temp++] = list[i];
 						vacancies--;
 						bc--;
-					}	
+					}
 				} else {
 					return;
 				}
 			}
 		}
 		for (int i = 0; i < size; i++) {
-			if (vacancies!=0){
+			if (vacancies != 0) {
 				if (!contains(list[i])) {
 					result[temp++] = list[i];
 					vacancies--;
