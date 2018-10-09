@@ -31,7 +31,7 @@ class student {
 				if (s2.birth[2] - s2.birth[2] != 0) {
 					return s2.birth[2] - s1.birth[2];
 				} else {
-					int count = 2 * 2 + (2 + 1);
+					int count = 2 * 2 * (2 + 1);
 					return (((count - s1.birth[1]) * 30) - ((count - s2.birth[1]) * 30));
 				}
 			}
