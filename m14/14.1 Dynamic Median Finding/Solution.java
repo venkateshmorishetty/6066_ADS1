@@ -20,7 +20,7 @@ final class Solution {
         MinPQ<Double> minheap = new MinPQ<Double>();
         MaxPQ<Double> maxheap = new MaxPQ<Double>();
         double m = 0.0;
-        for (long i = 0; i < lines-1; i++) {
+        for (long i = 0; i < lines; i++) {
             double value = scan.nextDouble();
             if (value > m) {
                 minheap.insert(value);
