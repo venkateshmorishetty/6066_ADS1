@@ -1,7 +1,7 @@
 /**
  * Class for studentsinfo.
  */
-class studentsinfo {
+class Studentsinfo {
     /**
      * { list }.
      */
@@ -21,8 +21,9 @@ class studentsinfo {
     /**
      * Constructs the object.
      */
-    public studentsinfo() {
-        list = new student[100];
+    Studentsinfo() {
+        final int HUNDRED = 100;
+        list = new student[HUNDRED];
         size = 0;
 
     }
@@ -54,7 +55,7 @@ class studentsinfo {
      * { tostring }.
      */
     public void tostring() {
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             System.out.println(list[i].name + ","
                 + list[i].totalscore + "," + list[i].cast);
         }
@@ -64,8 +65,8 @@ class studentsinfo {
      */
     public void second() {
         for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i].name + "," +
-                result[i].totalscore + "," + result[i].cast);
+            System.out.println(result[i].name + ","
+                + result[i].totalscore + "," + result[i].cast);
         }
     }
     /**
@@ -84,13 +85,13 @@ class studentsinfo {
         return false;
     }
     /**
-     * { qualified }.
+     * { vacancies method }.
      *
-     * @param      vacancies  The vacancies
-     * @param      st         { parameter_description }
-     * @param      sc         The screen
-     * @param      bc         { parameter_description }
-     * @param      open       The open
+     * @param      v        {  number of vacancies }
+     * @param      s        { st count }
+     * @param      sccount  The sccount
+     * @param      b        { bc count }
+     * @param      o        { open }
      */
     public void vacancies(final int v, final int s, final int sccount,
         final int b, final int o) {
@@ -107,7 +108,7 @@ class studentsinfo {
         for (int i = 0; i < size; i++) {
             if (!(contains(list[i]))) {
                 if (vacancies != 0) {
-                    if(list[i].cast.equals("SC")
+                    if (list[i].cast.equals("SC")
                         && sc != 0) {
                         result[temp++] = list[i];
                         vacancies--;

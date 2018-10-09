@@ -17,7 +17,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        studentsinfo s = new studentsinfo();
+        Studentsinfo s = new Studentsinfo();
         int noofstudents = sc.nextInt();
         int noofvacancies = sc.nextInt();
         int unreseved = sc.nextInt();
