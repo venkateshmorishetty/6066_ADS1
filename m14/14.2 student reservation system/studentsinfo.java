@@ -5,19 +5,19 @@ class studentsinfo {
     /**
      * { list }.
      */
-    student[] list;
+    private student[] list;
     /**
      * { result }.
      */
-    student[] result;
+    private student[] result;
     /**
      * { size }.
      */
-    int size;
+    private int size;
     /**
      * Constructs the object.
      */
-    int temp = 0;
+    private int temp = 0;
     /**
      * Constructs the object.
      */
@@ -27,11 +27,27 @@ class studentsinfo {
 
     }
     /**
+     * Gets the list.
+     *
+     * @return     The list.
+     */
+    public student[] getList() {
+        return list;
+    }
+    /**
+     * Gets the size.
+     *
+     * @return     The size.
+     */
+    public int getSize() {
+        return size;
+    }
+    /**
      * { add student }.
      *
      * @param      s     { parameter_description }
      */
-    public void addstudent(student s) {
+    public void addstudent(final student s) {
         list[size++] = s;
     }
     /**
@@ -76,8 +92,13 @@ class studentsinfo {
      * @param      bc         { parameter_description }
      * @param      open       The open
      */
-    public void vacancies(int vacancies, int st, int sc,
-        int bc, int open) {
+    public void vacancies(final int v, final int s, final int sccount,
+        final int b, final int o) {
+        int vacancies = v;
+        int st = s;
+        int sc = sccount;
+        int bc = b;
+        int open = o;
         result = new student[vacancies];
         for (int i = 0; i < open; i++) {
             result[temp++] = list[i];

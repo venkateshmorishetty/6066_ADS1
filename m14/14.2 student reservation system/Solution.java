@@ -38,7 +38,7 @@ final class Solution {
             s.addstudent(st);
         }
         insertion sort = new insertion();
-        sort.sort(s.list, s.size,student.meritCompartor);
+        sort.sort(s.getList(), s.getSize(),student.meritCompartor);
         s.tostring();
         System.out.println();
         s.vacancies( noofvacancies, stvacanicies, scvacanicies,
