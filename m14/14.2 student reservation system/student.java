@@ -28,7 +28,7 @@ class student {
 			} else if(s1.marks2 - s2.marks2 != 0) {
 				return s1.marks2 - s2.marks2;
 			} else {
-				return s1.birth.compareTo(s2.birth);
+				return s2.birth.compareTo(s1.birth);
 			}
 		}
 	};
