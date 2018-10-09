@@ -13,6 +13,13 @@ class insertion {
 	public insertion() {
 		//constructor
 	}
+	/**
+	 * { performs insertion sort }.
+	 * { time complexity for insertion sort is O(n^2) because there is a nested loop }
+	 * @param      students    The students
+	 * @param      size        The size
+	 * @param      comparator  The comparator
+	 */
 	public void sort(final student[] students, final int size,
 		final Comparator comparator) {
 		student temp;
