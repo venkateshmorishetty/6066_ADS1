@@ -10,8 +10,8 @@ final class Solution {
 
     }
     /**
-     * main method for the program.
-     * complexity O(n) as we are taking n inputs.
+     * main method.
+     * time complexity is O(n) because we the loop will run n times.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
