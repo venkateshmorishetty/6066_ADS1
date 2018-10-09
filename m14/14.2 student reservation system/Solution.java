@@ -17,11 +17,29 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         studentsinfo s = new studentsinfo();
+        /**.
+         * { var_description }
+         */
         int noofstudents = sc.nextInt();
+        /**.
+         * { var_description }
+         */
         int noofvacancies = sc.nextInt();
+        /**.
+         * { var_description }
+         */
         int unreseved = sc.nextInt();
+        /**.
+         * { var_description }
+         */
         int bcvacanicies = sc.nextInt();
+        /**.
+         * { var_description }
+         */
         int scvacanicies = sc.nextInt();
+        /**.
+         * { var_description }
+         */
         int stvacanicies = sc.nextInt();
         sc.nextLine();
         for (int i = 0; i < noofstudents; i++) {
