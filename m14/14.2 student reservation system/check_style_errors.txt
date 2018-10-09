@@ -8,13 +8,13 @@ Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:24:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:25:28: '100' is a magic number. [MagicNumber]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:34:28: Parameter s should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:41:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:41:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:51:53: '+' should be on a new line. [OperatorWrap]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:79:27: Parameter vacancies should be final. [FinalParameters]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:79:42: Parameter st should be final. [FinalParameters]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:79:50: Parameter sc should be final. [FinalParameters]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:80:9: Parameter bc should be final. [FinalParameters]
 [ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:80:17: Parameter open should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:89:23: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\msit\ADS1\6066_ADS1\m14\14.2 student reservation system\studentsinfo.java:89:23: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 17 errors.
