@@ -1,6 +1,20 @@
-import java.util.*;
+import java.util.Comparator;
+/**
+ * Class for insertion.
+ */
 class insertion {
-	public void sort(student[] students, int size, Comparator comparator) {
+	/**
+	 * { insertion class }.
+	 *
+	 * @param      students    The students
+	 * @param      size        The size
+	 * @param      comparator  The comparator
+	 */
+	public insertion() {
+		//constructor
+	}
+	public void sort(final student[] students, final int size,
+		final Comparator comparator) {
 		student temp;
 		for(int i = 1; i < size; i++) {
 			temp = students[i];
