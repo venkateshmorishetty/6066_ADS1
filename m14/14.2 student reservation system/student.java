@@ -28,8 +28,8 @@ class student {
 			} else if(s1.marks2 - s2.marks2 != 0) {
 				return s1.marks2 - s2.marks2;
 			} else {
-				if (s2.birth[2] - s2.birth[2] != 0) {
-					return s2.birth[2] - s1.birth[2];
+				if (s1.birth[2] - s2.birth[2] != 0) {
+					return s1.birth[2] - s2.birth[2];
 				} else {
 					int count = 2 * 2 * (2 + 1);
 					return (((count - s1.birth[1]) * 30) - ((count - s2.birth[1]) * 30));
