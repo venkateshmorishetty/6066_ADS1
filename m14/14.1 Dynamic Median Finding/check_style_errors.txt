@@ -1,2 +1,5 @@
 Starting audit...
+[ERROR] D:\msit\ADS1\6066_ADS1\m14\14.1 Dynamic Median Finding\Solution.java:23:35: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\msit\ADS1\6066_ADS1\m14\14.1 Dynamic Median Finding\Solution.java:23:36: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
+Checkstyle ends with 2 errors.
