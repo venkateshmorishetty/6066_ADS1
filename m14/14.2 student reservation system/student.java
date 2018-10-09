@@ -31,8 +31,12 @@ class student {
 				if (s1.birth[2] - s2.birth[2] != 0) {
 					return s1.birth[2] - s2.birth[2];
 				} else {
-					int count = 2 * 2 * (2 + 1);
-					return (((count - s1.birth[1]) * 30) - ((count - s2.birth[1]) * 30));
+					// int count = 2 * 2 * (2 + 1);
+					// return (((count - s1.birth[1]) * 30) - ((count - s2.birth[1]) * 30));
+					if (s1.birth[1] - s2.birth[1] != 0) {
+					return s1.birth[1] - s2.birth[1];
+				}					
+				return s1.birth[0] - s2.birth[0];
 				}
 			}
 		}
