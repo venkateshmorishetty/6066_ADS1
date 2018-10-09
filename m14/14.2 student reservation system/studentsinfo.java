@@ -22,8 +22,8 @@ class Studentsinfo {
      * Constructs the object.
      */
     Studentsinfo() {
-        final int HUNDRED = 100;
-        list = new student[HUNDRED];
+        final int len = 100;
+        list = new student[len];
         size = 0;
 
     }
