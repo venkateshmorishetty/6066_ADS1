@@ -21,11 +21,14 @@ final class Solution {
 		for (int i = 0; i < noofstudents; i++) {
 			String[] arr = sc.nextLine().split(",");
 			String[] date = arr[1].split("-");
-			Date d = new Date(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
-			student st = new student(arr[0], d, Integer.parseInt(arr[2]),
+			int[] dat = new int[date.length];
+			for (int j = 0; i < date.length; j++) {
+				dat[j] = Integer.parseInt(date[j]);
+			}
+			// Date d = new Date(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+			student st = new student(arr[0], dat, Integer.parseInt(arr[2]),
 				Integer.parseInt(arr[3]), Integer.parseInt(arr[4]), Integer.parseInt(arr[5]), arr[6]);
 			s.addstudent(st);	
-			
 		}
 		insertion sort = new insertion();
 		sort.sort(s.list, s.size,student.meritCompartor);
