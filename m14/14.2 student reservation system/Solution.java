@@ -1,45 +1,28 @@
-import java.util.*;
-/**
+import java.util.Scanner;
+/**.
  * Class for solution.
  */
 final class Solution {
-    /**
+    /**.
      * Constructs the object.
      */
     private Solution() {
         //constructor.
     }
+    
     /**
-     * { main }.
+     * { main function }.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         studentsinfo s = new studentsinfo();
-        /**.
-         * { var_description }
-         */
         int noofstudents = sc.nextInt();
-        /**.
-         * { var_description }
-         */
         int noofvacancies = sc.nextInt();
-        /**.
-         * { var_description }
-         */
         int unreseved = sc.nextInt();
-        /**.
-         * { var_description }
-         */
         int bcvacanicies = sc.nextInt();
-        /**.
-         * { var_description }
-         */
         int scvacanicies = sc.nextInt();
-        /**.
-         * { var_description }
-         */
         int stvacanicies = sc.nextInt();
         sc.nextLine();
         for (int i = 0; i < noofstudents; i++) {
@@ -53,7 +36,6 @@ final class Solution {
                 Integer.parseInt(arr[3]), Integer.parseInt(arr[4]),
                 Integer.parseInt(arr[5]), arr[6]);
             s.addstudent(st);
-            
         }
         insertion sort = new insertion();
         sort.sort(s.list, s.size,student.meritCompartor);
