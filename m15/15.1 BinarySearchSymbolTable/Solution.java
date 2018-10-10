@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/**.
+/**
  * Class for binary search symbol table.
  */
 class BinarySearchSymbolTable {
