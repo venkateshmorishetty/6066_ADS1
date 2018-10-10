@@ -1,2 +1,8 @@
 Starting audit...
+[ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:5: Type Javadoc comment is missing @param <Key> tag. [JavadocType]
+[ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:5: Type Javadoc comment is missing @param <Value> tag. [JavadocType]
+[ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:24:23: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:25:27: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:165: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
+Checkstyle ends with 5 errors.

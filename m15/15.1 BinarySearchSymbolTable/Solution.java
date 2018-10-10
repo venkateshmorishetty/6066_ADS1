@@ -2,15 +2,15 @@ import java.util.Scanner;
 /**
  * Class for binary search symbol table.
  */
-class BinarySearchSymbolTable {
+class BinarySearchSymbolTable<Key extends Comparable, Value> {
     /**
      * { keys array }.
      */
-    private String[] keys;
+    private Key[] keys;
     /**
      * { values array }.
      */
-    private int[] values;
+    private Value[] values;
     /**.
      * { size }
      */
@@ -21,17 +21,18 @@ class BinarySearchSymbolTable {
      * @param      len   The length
      */
     BinarySearchSymbolTable(final int len) {
-        keys = new String[len];
-        values = new int[len];
+        keys = (Key[])new Comparable[len];
+        values = (Value[])new Object[len];
     }
     /**
      * { to find the position of key or rank of key }.
-     *
+     * { time complexity require to find rank is log(n) because it uses binary
+     *  search }.
      * @param      k     { key }
      *
      * @return     { returns the position of given key in key array }
      */
-    public int rank(final String k) {
+    public int rank(final Key k) {
         int low = 0, high = size - 1;
         while (low <= high) {
             int mid = (low + high) / 2;
@@ -47,11 +48,11 @@ class BinarySearchSymbolTable {
     }
     /**
      * { put the key int symbol table }.
-     *
+     * { time complexity to put element into }
      * @param      key    The key
      * @param      value  The value
      */
-    public void put(final String key, final int value) {
+    public void put(final Key key, final Value value) {
         int i = rank(key);
         if (i < size && keys[i].compareTo(key) == 0) {
             values[i] = value;
@@ -78,9 +79,9 @@ class BinarySearchSymbolTable {
      *
      * @return     { true if present false otherwise }
      */
-    public boolean contains(final String key) {
+    public boolean contains(final Key key) {
         int i = rank(key);
-        return keys[i].equals(key);
+        return keys[i].compareTo(key) == 0;
     }
     /**
      * { returns floor of given key }.
@@ -89,9 +90,9 @@ class BinarySearchSymbolTable {
      *
      * @return     { returns largest key less than or equal given key }
      */
-    public String floor(final String key) {
+    public Key floor(final Key key) {
         int i = rank(key);
-        if (keys[i].equals(key)) {
+        if (keys[i].compareTo(key) == 0) {
             return keys[i];
         } else if (i == 0) {
             return null;
@@ -106,10 +107,10 @@ class BinarySearchSymbolTable {
      *
      * @return     { return value if key is in symbol table else null }
      */
-    public String get(final String key) {
+    public Value get(final Key key) {
         int i = rank(key);
-        if (keys[i].equals(key)) {
-            return values[i] + "";
+        if (keys[i].compareTo(key) == 0) {
+            return values[i];
         } else {
             return null;
         }
@@ -127,7 +128,7 @@ class BinarySearchSymbolTable {
      *
      * @return     { maximum key in symbol table }
      */
-    public String max() {
+    public Key max() {
         return keys[size - 1];
     }
     /**
@@ -139,7 +140,7 @@ class BinarySearchSymbolTable {
             values[j] = values[j + 1];
         }
         keys[size] = null;
-        values[size] = 0;
+        values[size] = null;
         size--;
     }
 }
@@ -161,8 +162,8 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] keys = sc.nextLine().split(" ");
-        BinarySearchSymbolTable s = new BinarySearchSymbolTable(
-            keys.length);
+        BinarySearchSymbolTable<String, Integer> s = new BinarySearchSymbolTable<String,
+        Integer>(keys.length);
         for (int i = 0; i < keys.length; i++) {
             s.put(keys[i], i);
         }
