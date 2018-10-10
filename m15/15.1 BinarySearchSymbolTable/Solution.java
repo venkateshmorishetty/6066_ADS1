@@ -88,7 +88,6 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { returns floor of given key }.
-     * 
      * @param      key   The key
      *
      * @return     { returns largest key less than or equal given key }
