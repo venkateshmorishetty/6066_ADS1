@@ -51,7 +51,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { put the key int symbol table }.
-     * { time complexity to put element into }
+     * { time complexity to put element into symbol table is O(logn) }
      * @param      key    The key
      * @param      value  The value
      */
@@ -77,7 +77,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { checks whether key is in symbol table or not }.
-     *
+     * { time complexity for contains is O(1)}
      * @param      key   The key
      *
      * @return     { true if present false otherwise }
@@ -88,7 +88,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { returns floor of given key }.
-     *
+     * 
      * @param      key   The key
      *
      * @return     { returns largest key less than or equal given key }
@@ -105,7 +105,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { get the value of given key }.
-     *
+     * { time complexity for get is O(1)}
      * @param      key   The key
      *
      * @return     { return value if key is in symbol table else null }
@@ -120,6 +120,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { prints the symbol table }.
+     * { time complexity for keys is O(n)}
      */
     public void keys() {
         for (int i = 0; i < size; i++) {
@@ -128,7 +129,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { maximum key in symbol table }.
-     *
+     * { time complexity for max is O(1)}
      * @return     { maximum key in symbol table }
      */
     public Key max() {
@@ -136,6 +137,7 @@ class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     }
     /**
      * { deletes minimum }.
+     * { time complexity for deleteMin is O(n)}
      */
     public void deleteMin() {
         for (int j = 0; j < size - 1; j++) {
