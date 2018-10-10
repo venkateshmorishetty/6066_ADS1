@@ -1,6 +1,4 @@
 Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:23:29: Parameter len should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m15\15.1 BinarySearchSymbolTable\Solution.java:34:21: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.

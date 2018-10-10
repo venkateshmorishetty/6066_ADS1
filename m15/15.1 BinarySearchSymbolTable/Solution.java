@@ -1,5 +1,5 @@
 import java.util.Scanner;
-/**
+/**.
  * Class for binary search symbol table.
  */
 class BinarySearchSymbolTable {
@@ -20,7 +20,7 @@ class BinarySearchSymbolTable {
      *
      * @param      len   The length
      */
-    BinarySearchSymbolTable(int len) {
+    BinarySearchSymbolTable(final int len) {
         keys = new String[len];
         values = new int[len];
     }
@@ -31,7 +31,7 @@ class BinarySearchSymbolTable {
      *
      * @return     { returns the position of given key in key array }
      */
-    public int rank(String k) {
+    public int rank(final String k) {
         int low = 0, high = size - 1;
         while (low <= high) {
             int mid = (low + high) / 2;
