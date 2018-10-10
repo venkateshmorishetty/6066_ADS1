@@ -1,6 +1,9 @@
 import java.util.Scanner;
 /**
  * Class for binary search symbol table.
+ *
+ * @param      <Comparable>  The comparable
+ * @param      <Value>       The value
  */
 class BinarySearchSymbolTable<Key extends Comparable, Value> {
     /**
@@ -21,8 +24,8 @@ class BinarySearchSymbolTable<Key extends Comparable, Value> {
      * @param      len   The length
      */
     BinarySearchSymbolTable(final int len) {
-        keys = (Key[])new Comparable[len];
-        values = (Value[])new Object[len];
+        keys = (Key[]) new Comparable[len];
+        values = (Value[]) new Object[len];
     }
     /**
      * { to find the position of key or rank of key }.
@@ -162,8 +165,8 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] keys = sc.nextLine().split(" ");
-        BinarySearchSymbolTable<String, Integer> s = new BinarySearchSymbolTable<String,
-        Integer>(keys.length);
+        BinarySearchSymbolTable<String, Integer> s = new BinarySearchSymbolTable
+        <String, Integer>(keys.length);
         for (int i = 0; i < keys.length; i++) {
             s.put(keys[i], i);
         }
