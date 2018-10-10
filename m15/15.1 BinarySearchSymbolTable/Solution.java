@@ -2,10 +2,10 @@ import java.util.Scanner;
 /**
  * Class for binary search symbol table.
  *
- * @param      <Comparable>  The comparable
- * @param      <Value>       The value
+ * @param      <Key>    The key
+ * @param      <Value>  The value
  */
-class BinarySearchSymbolTable<Key extends Comparable, Value> {
+class BinarySearchSymbolTable<Key extends Comparable<Key>, Value> {
     /**
      * { keys array }.
      */
