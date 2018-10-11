@@ -153,7 +153,9 @@ class BinarySearchTree<Value> {
     private Node head = null;
     /**
      * { put the element into bst }.
-     *
+     * { time complexity to put a node in bst is O(n) because
+     *  in the ascending order the tree will grow only on one
+     *  side that is the worst case }
      * @param      key    The key
      * @param      value  The value
      */
@@ -188,7 +190,9 @@ class BinarySearchTree<Value> {
     }
     /**
      * { get the qty of book }.
-     *
+     * { time complexity to get an element from bst in worst case
+     *  is O(n) because in worst case tree will grows only in one
+     *  so if the rquired node is last node than it will take O(n)}
      * @param      b     { given book }
      *
      * @return     { qty of the given book }
