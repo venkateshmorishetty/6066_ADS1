@@ -147,8 +147,17 @@ class Node<Value> {
  * @param      <Value>  The value
  */
 class BinarySearchTree<Value> {
-    Node head = null;
-    public void put(Book key, int value) {
+    /**
+     * { head of bst }.
+     */
+    private Node head = null;
+    /**
+     * { put the element into bst }.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
+    public void put(final Book key, final int value) {
         Node<Integer> n = new Node<Integer>(key, value);
         if (head == null) {
             head = n;
@@ -156,7 +165,8 @@ class BinarySearchTree<Value> {
         } else {
             Node temp = head;
             while (temp != null) {
-                int check = n.getBook().getName().compareTo(temp.getBook().getName());
+                int check = n.getBook().getName().compareTo(
+                    temp.getBook().getName());
                 if (check > 0) {
                     if (temp.getRight() == null) {
                         temp.setRight(n);
@@ -216,7 +226,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        BinarySearchTree<Integer> btree = new 
+        BinarySearchTree<Integer> btree = new
         BinarySearchTree<Integer>();
         while (sc.hasNext()) {
             String[] line = sc.nextLine().split(",");
