@@ -73,7 +73,7 @@ final class Solution {
     }
     /**
      * { main method }.
-     *
+     * 
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -85,7 +85,7 @@ final class Solution {
     }
     /**
      * { taxinumbers }.
-     *
+     * {time complexity is O(n)}
      * @param      number        nth number
      * @param      combinations  The combinations
      */
