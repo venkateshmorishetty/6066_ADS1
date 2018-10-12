@@ -1,22 +1,30 @@
 import java.util.Scanner;
-import java.lang.Comparable;
 /**
  * Class for cube sum.
  */
-class CubeSum implements Comparable<CubeSum>{
-    int i;
-    int j;
-    int sum;
+class CubeSum implements Comparable <CubeSum> {
+    /**
+     * { i value }.
+     */
+    private int i;
+    /**
+     * { j value }.
+     */
+    private int j;
+    /**
+     * { sum }.
+     */
+    private int sum;
     /**
      * Constructs the object.
      *
      * @param      i     { i value }
      * @param      j     { j value }
      */
-    public CubeSum(final int i, final int j) {
-        this.i = i;
-        this.j = j;
-        sum = i*i*i + j*j*j;
+    public CubeSum(final int val1, final int val2) {
+        this.i = val1;
+        this.j = val2;
+        sum = i * i * i + j * j * j;
     }
     /**
      * { compares two objects }.
@@ -73,7 +81,7 @@ final class Solution {
         String[] input = sc.nextLine().split(" ");
         int value1 = Integer.parseInt(input[0]);
         int value2 = Integer.parseInt(input[1]);
-        TaxiNumbers(value1, value2);
+        taxiNumbers(value1, value2);
     }
     /**
      * { taxinumbers }.
@@ -81,7 +89,7 @@ final class Solution {
      * @param      number        nth number
      * @param      combinations  The combinations
      */
-    public static void TaxiNumbers(final int number, final int combinations) {
+    public static void taxiNumbers(final int number, final int combinations) {
         final int n = 600;
         MinPQ<CubeSum> mp = new MinPQ<CubeSum>();
         for (int i = 0; i < n; i++) {
@@ -100,7 +108,7 @@ final class Solution {
             if (count == combinations - 1) {
                 nthnumber--;
                 if (nthnumber == 0) {
-                    System.out.println(temp.sum);
+                    System.out.println(temp.getSum());
                     break;
                 }
             }
