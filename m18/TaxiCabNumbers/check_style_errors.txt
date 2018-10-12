@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m18\TaxiCabNumbers\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.
