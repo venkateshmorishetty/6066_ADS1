@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for cube sum.
  */
-class CubeSum implements Comparable <CubeSum> {
+class CubeSum implements Comparable<CubeSum> {
     /**
      * { i value }.
      */
@@ -18,10 +18,10 @@ class CubeSum implements Comparable <CubeSum> {
     /**
      * Constructs the object.
      *
-     * @param      i     { i value }
-     * @param      j     { j value }
+     * @param      val1  The value 1
+     * @param      val2  The value 2
      */
-    public CubeSum(final int val1, final int val2) {
+    CubeSum(final int val1, final int val2) {
         this.i = val1;
         this.j = val2;
         sum = i * i * i + j * j * j;
