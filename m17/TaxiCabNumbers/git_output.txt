@@ -1,6 +1,0 @@
-[master 2f4faed] "taxi_cab_numbers: 5/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
- 4 files changed, 1 insertion(+), 4 deletions(-)
- rewrite m18/TaxiCabNumbers/result/score.json (74%)
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-To https://github.com/venkateshmorishetty/6066_ADS1.git
-   260b179..2f4faed  master -> master
