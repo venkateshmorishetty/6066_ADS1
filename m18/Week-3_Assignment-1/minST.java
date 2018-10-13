@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 final class minST<Key extends Comparable<Key>> {
    private static final int INIT_CAPACITY = 2;
     private Key[] keys;
@@ -75,11 +76,11 @@ final class minST<Key extends Comparable<Key>> {
         boolean check = contains(key);
         if (size == 0) {
             keys[size] = key;
-            values[size] = 1;
+            values[size] = value;
             size++;
             return;
         }
-        if(!check){
+        if(!check) {
         	keys[size] = key;
         	values[size] = 1;
         	size++;
@@ -93,7 +94,7 @@ final class minST<Key extends Comparable<Key>> {
         for(int i = 0; i < size; i++) {
         	if(keys[i].equals(key)) return true;
         }
-        return false;
+        return true;
     }
     /**
      * { get the value of given key }.
