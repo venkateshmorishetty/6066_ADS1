@@ -35,7 +35,8 @@ class Solution {
 				Stock temp1 = max.delMax();
 				System.out.println(temp1.name+" "+temp1.change);
 				// maxst.put(temp1.name,1);
-			}	
+			}
+			System.out.println();	
 			
 		}
 
