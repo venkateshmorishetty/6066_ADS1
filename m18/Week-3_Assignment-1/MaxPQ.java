@@ -12,9 +12,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
         n = 0;
     }
 
-    /**
-     * Initializes an empty priority queue.
-     */
+    
     public MaxPQ() {
         this(1);
     }
@@ -65,10 +63,9 @@ public class MaxPQ<Key> implements Iterable<Key> {
 
     public void insert(Key x) {
 
-        // double size of array if necessary
+
         if (n == pq.length - 1) resize(2 * pq.length);
 
-        // add x, and percolate it up to maintain heap invariant
         pq[++n] = x;
         swim(n);
         assert isMaxHeap();
@@ -119,12 +116,12 @@ public class MaxPQ<Key> implements Iterable<Key> {
         pq[j] = swap;
     }
 
-    // is pq[1..N] a max heap?
+
     private boolean isMaxHeap() {
         return isMaxHeap(1);
     }
 
-    // is subtree of pq[1..n] rooted at k a max heap?
+
     private boolean isMaxHeap(int k) {
         if (k > n) return true;
         int left = 2*k;

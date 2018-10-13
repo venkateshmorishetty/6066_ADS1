@@ -5,23 +5,18 @@ final class maxST<Key extends Comparable<Key>> {
     private int[] values;
     private int size = 0;
 
-    /**
-     * Initializes an empty symbol table.
-     */
+   
     public maxST() {
         this(INIT_CAPACITY);
     }
 
-    /**
-     * Initializes an empty symbol table with the specified initial capacity.
-     * @param capacity the maximum capacity
-     */
+  
     public maxST(int capacity) { 
         keys = (Key[]) new Comparable[capacity]; 
         values = new int[capacity]; 
     }   
 
-    // resize the underlying arrays
+   
     private void resize(int capacity) {
         assert capacity >= size;
         Key[]   tempk = (Key[])   new Comparable[capacity];
