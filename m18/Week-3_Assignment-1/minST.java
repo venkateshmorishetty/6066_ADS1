@@ -1,5 +1,5 @@
 import java.util.Scanner;
-final class maxST<Key extends Comparable<Key>> {
+final class minST<Key extends Comparable<Key>> {
    private static final int INIT_CAPACITY = 2;
     private Key[] keys;
     private int[] values;
@@ -8,7 +8,7 @@ final class maxST<Key extends Comparable<Key>> {
     /**
      * Initializes an empty symbol table.
      */
-    public maxST() {
+    public minST() {
         this(INIT_CAPACITY);
     }
 
@@ -16,7 +16,7 @@ final class maxST<Key extends Comparable<Key>> {
      * Initializes an empty symbol table with the specified initial capacity.
      * @param capacity the maximum capacity
      */
-    public maxST(int capacity) { 
+    public minST(int capacity) { 
         keys = (Key[]) new Comparable[capacity]; 
         values = new int[capacity]; 
     }   
