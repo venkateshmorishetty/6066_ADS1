@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m3\3-sum\Solution.java:15:16: Name 'ThreesumCount' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 Audit done.
-Checkstyle ends with 1 errors.
