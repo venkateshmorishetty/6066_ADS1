@@ -1,0 +1,8 @@
+Starting audit...
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\3-sum\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\3-sum\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\3-sum\Solution.java:4:16: Name 'ThreeSumCount' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\3-sum\Solution.java:4:30: Parameter arr should be final. [FinalParameters]
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\3-sum\Solution.java:49: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 5 errors.
