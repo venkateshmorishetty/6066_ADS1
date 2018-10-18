@@ -1,16 +1,27 @@
-class node{
+/**
+ * Class for Node.
+ */
+class Node{
 	int data;
-	node next;
-	node(int data) {
+	Node next;
+	Node(int data) {
 		this.data = data;
 	}
 }
-class linkedlist{
-	node head = null;
+/**
+ * Class for Linkedlist.
+ */
+class Linkedlist{
+	Node head = null;
 	int size = 0;
-	node tail;
-	public void pushRight(int data) {
-		node newnode = new node(data);
+	Node tail;
+	/**
+	 * Pushes a right.
+	 *
+	 * @param      data  The data
+	 */
+	public void pushRight(final int data) {
+		Node newnode = new Node(data);
 		newnode.next = null;
 		if (head == null) {
 			head = newnode;
@@ -24,8 +35,13 @@ class linkedlist{
 		size++;
 		print();		
 	}
+	/**
+	 * Pushes a left.
+	 *
+	 * @param      item  The item
+	 */
 	public void pushLeft(int item) {
-		node n = new node(item);
+		Node n = new Node(item);
 		n.next = null;
 		if(head == null) {
 			head = n;
@@ -37,6 +53,11 @@ class linkedlist{
 		size++;
 		print();
 	}
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		if(size == 0) {
 			return true;
@@ -44,24 +65,30 @@ class linkedlist{
 		return false;
 
 	}
+	/**
+	 * { pop the first element from left }.
+	 */
 	public void popLeft() {
 		if(size == 0) {
 			System.out.println("Deck is empty");
 			
 			return;
 		}
-		node temp = head;
+		Node temp = head;
 		head = head.next;
 		size--;
 		print();
 	}
+	/**
+	 * { pop the last element }..
+	 */
 	public void popRight() {
 		if(size == 0) {
 			System.out.println("Deck is empty");
 			
 			return;
 		}
-		node temp = head;
+		Node temp = head;
 		while(temp.next.next!=null) {
 			temp = temp.next;
 		}
@@ -70,12 +97,15 @@ class linkedlist{
 		size--;
 		print();
 	}
+	/**
+	 * { print the entire linked list }.
+	 */
 	public void print() {
 		if(size == 0 ) {
 			System.out.println("[]");
 			return;
 		}
-		node temp = head;
+		Node temp = head;
 		String str = "[";
 		while(temp.next!=null) {
 			str += temp.data+", ";
@@ -84,6 +114,11 @@ class linkedlist{
 		str += temp.data+"]";
 		System.out.println(str);
 	}
+	/**
+	 * { return the size of linked list }.
+	 *
+	 * @return     { size of linked list }
+	 */
 	public int size() {
 		return size;
 	}

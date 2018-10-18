@@ -15,7 +15,7 @@ final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        linkedlist l = new linkedlist();
+        Linkedlist l = new Linkedlist();
         Scanner sc = new Scanner(System.in);
         int lines = sc.nextInt();
         for (int t = 0; t <= lines; t++) {
