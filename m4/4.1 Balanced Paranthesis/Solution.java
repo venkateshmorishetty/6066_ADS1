@@ -47,10 +47,20 @@ class Stack {
         return top;
     }
 }
+/**
+ * Class for balanced parenthesis.
+ */
 class BalancedParenthesis {
-    int flag;
-    Stack s;
-    public boolean checksBalancedParenthesis(String input) {
+    private int flag;
+    private Stack s;
+    /**
+     * { checksBalancedParenthesis }.
+     *
+     * @param      input  The input
+     *
+     * @return     { returns true if it is balanced else false }.
+     */
+    public boolean checksBalancedParenthesis(final String input) {
         flag = 0;
         String[] arr = input.split("", input.length());
             s = new Stack(arr.length);
@@ -107,7 +117,7 @@ final class Solution {
         for (int j = 0; j < lines; j++) {
             String line = sc.next();
             BalancedParenthesis b = new BalancedParenthesis();
-            if(b.checksBalancedParenthesis(line)) {
+            if (b.checksBalancedParenthesis(line)) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
