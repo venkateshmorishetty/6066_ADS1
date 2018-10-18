@@ -1,6 +1,15 @@
 import java.util.Scanner;
+/**
+ * Class for sorted array.
+ */
 class SortedArray {
-    public void sortedArray(String[] array1, String[] array2) {
+    /**
+     * { sortedArray of two arrays combination }.
+     *
+     * @param      array1  The array 1
+     * @param      array2  The array 2
+     */
+    public void sortedArray(final String[] array1, final String[] array2) {
         int size1 = array1.length;
         int size2 = array2.length;
         int[] arr1 = new int[size1];
