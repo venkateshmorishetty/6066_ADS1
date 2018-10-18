@@ -93,8 +93,8 @@ class BalancedParenthesis {
                     }
                 }
             }
-            if (flag == 0) {
-                return true;  
+            if (s.getTop() == -1 && flag == 0) {
+                return true;
             } else {
                 return false;
             }
