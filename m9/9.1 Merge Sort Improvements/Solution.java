@@ -19,7 +19,7 @@ class Merge {
     }
     /**
      * { insertion sort }.
-     * { time complexity for insertion sort is O(n^2) becuse
+     * { time complexity for insertion sort is O(n^2/2) becuse
      * it uses nested loop}
      * @param      a     { array }
      * @param      low   The low
@@ -47,7 +47,7 @@ class Merge {
     }
     /**
      * { sort method }.
-     * { time complexity for sort is log(n)}.
+     * { time complexity for sort is n*log(n)}.
      *
      * @param      array  The array
      * @param      aux    The auxiliary
@@ -76,8 +76,8 @@ class Merge {
     }
     /**
      * { merges two sub arrays }.
-     * { time complexity for merge is n}
-     * {for merge sort total time complexity is n*log(n)}.
+     * { time complexity for merge is O(n)}
+     * 
      *
      * @param      array  The array
      * @param      aux    The auxiliary
@@ -128,7 +128,7 @@ class Merge {
     }
     /**
      * Determines if sorted.
-     *
+     * { time complexity is O(n) }
      * @param      array  The array
      * @param      low    The low
      * @param      high   The high
@@ -146,7 +146,7 @@ class Merge {
     }
     /**
      * { display sorted array }.
-     *
+     * {time complexity is O(n)}
      * @param      aux   The auxiliary
      *
      * @return     { string }
