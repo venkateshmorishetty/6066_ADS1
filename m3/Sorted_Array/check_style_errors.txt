@@ -1,0 +1,7 @@
+Starting audit...
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\Sorted_Array\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\Sorted_Array\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\Sorted_Array\Solution.java:3:29: Parameter array1 should be final. [FinalParameters]
+[ERROR] D:\msit\ADS1\6066_ADS1\m3\Sorted_Array\Solution.java:3:46: Parameter array2 should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 4 errors.
