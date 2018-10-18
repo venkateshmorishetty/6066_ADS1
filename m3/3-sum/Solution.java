@@ -12,7 +12,7 @@ class ThreeSum {
      * @return     { count of possible combinations of
      * three values which their sum gives zero}.
      */
-    public int ThreeSumcount(final int[] arr) {
+    public int ThreesumCount(final int[] arr) {
         int count = 0;
         int j, k, sum;
         Arrays.sort(arr);
@@ -58,6 +58,6 @@ final class Solution {
             arr[i] = sc.nextInt();
         }
         ThreeSum ts = new ThreeSum();
-        System.out.println(ts.ThreeSumcount(arr));
+        System.out.println(ts.ThreesumCount(arr));
     }
 }
