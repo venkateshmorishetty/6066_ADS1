@@ -47,30 +47,12 @@ class Stack {
         return top;
     }
 }
-/**
- * Class for solution.
- */
-final class Solution {
-    /**
-     * Constructs the object.
-     */
-    private Solution() {
-        //pass
-    }
-    /**
-     * { Solution class }.
-     *
-     * @param      args  The arguments
-     */
-    public static void main(final String[] args) {
-        Stack s;
-        Scanner sc = new Scanner(System.in);
-        int lines = sc.nextInt();
-        int flag;
-        for (int j = 0; j < lines; j++) {
-            flag = 0;
-            String line = sc.next();
-            String[] arr = line.split("", line.length());
+class BalancedParenthesis {
+    int flag;
+    Stack s;
+    public boolean checksBalancedParenthesis(String input) {
+        flag = 0;
+        String[] arr = input.split("", input.length());
             s = new Stack(arr.length);
             for (int i = 0; i < arr.length; i++) {
                 if (arr[i].equals("(") || arr[i].equals("{")
@@ -96,6 +78,36 @@ final class Solution {
                 }
             }
             if (s.getTop() == -1 && flag == 0) {
+                // System.out.println("YES");
+                return true;    
+            } else {
+                // System.out.println("NO");
+                return false;
+            }
+    }
+}
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //pass
+    }
+    /**
+     * { Solution class }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int lines = sc.nextInt();
+        for (int j = 0; j < lines; j++) {
+            String line = sc.next();
+            BalancedParenthesis b = new BalancedParenthesis();
+            if(b.checksBalancedParenthesis(line)) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
