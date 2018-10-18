@@ -60,11 +60,9 @@ class BalancedParenthesis {
      */
     private Stack s;
     /**
-     * { checksBalancedParenthesis }.
+     * { checks BalancedParenthesis or not }.
      *
      * @param      input  The input
-     *
-     * @return     { returns true if it is balanced else false }.
      */
     public void checksBalancedParenthesis(final String input) {
         flag = 0;
