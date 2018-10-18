@@ -1,9 +1,28 @@
 import java.util.Scanner;
+/**
+ * Class for dynamic median.
+ */
 class DynamicMedian {
+    /**
+     * { minheap }.
+     */
     MinPQ<Double> minheap = new MinPQ<Double>();
+    /**
+     * { max heap }.
+     */
     MaxPQ<Double> maxheap = new MaxPQ<Double>();
-    double m = 0.0;
-    public double dynamicMedian(double value) {
+    /**
+     * { median }
+     */
+    private double m = 0.0;
+    /**
+     * { dynamic median }
+     *
+     * @param      value  The value
+     *
+     * @return     { medain value }
+     */
+    public double dynamicMedian(final double value) {
         if (value > m) {
             minheap.insert(value);
         } else if (value < m) {
