@@ -92,11 +92,9 @@ class BalancedParenthesis {
                 }
             }
             if (s.getTop() == -1 && flag == 0) {
-                // return true;
                 System.out.println("YES");
 
             } else {
-                // return false;
                 System.out.println("NO");
             }
     }
@@ -123,11 +121,6 @@ final class Solution {
             String line = sc.next();
             BalancedParenthesis b = new BalancedParenthesis();
             b.checksBalancedParenthesis(line);
-            // if (b.checksBalancedParenthesis(line)) {
-            //     System.out.println("YES");
-            // } else {
-            //     System.out.println("NO");
-            // }
         }
     }
 }
