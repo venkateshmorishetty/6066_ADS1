@@ -53,7 +53,7 @@ class DynamicMedian {
             m = (minval + maxval) / 2.0;
             return m;
         }
-        return 0;
+        return m;
     }
 }
 /**
