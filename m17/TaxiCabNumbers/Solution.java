@@ -84,7 +84,7 @@ final class Solution {
     }
     /**
      * { taxinumbers }.
-     * {time complexity is O(n)}
+     * {time complexity is O(nlog(n))}
      * @param      number        nth number
      * @param      combinations  The combinations
      */
