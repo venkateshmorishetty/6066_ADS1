@@ -51,7 +51,7 @@ class Linkedlist {
 		count = c;
 	}
 	/**
-	 * { josphproblem }.
+	 * { josphProblem }.
 	 */
 	public void josephProblem() {
 		Node newnode = new Node(0);
