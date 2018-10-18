@@ -1,23 +1,29 @@
 import java.util.Scanner;
 /**
- * Class for node.
+ * Class for Node.
  */
-class node {
+class Node {
+	/**
+	 * { data }.
+	 */
 	protected int data;
-	protected node next;
+	/**
+	 * { next node address }.
+	 */
+	protected Node next;
 	/**
 	 * Constructs the object.
 	 *
 	 * @param      d     { data }.
 	 */
-	node(final int d) {
+	Node(final int d) {
 		data = d;
 	}
 }
 /**
- * Class for linkedlist.
+ * Class for Linkedlist.
  */
-class linkedlist {
+class Linkedlist {
 	/**
 	 * { size }.
 	 */
@@ -29,7 +35,7 @@ class linkedlist {
 	/**
 	 * { head and tail }.
 	 */
-	private node head, tail;
+	private Node head, tail;
 	/**
 	 * { result }.
 	 */
@@ -40,24 +46,24 @@ class linkedlist {
 	 * @param      s     { size of list }
 	 * @param      c     { count }
 	 */
-	linkedlist(final int s, final int c) {
+	Linkedlist(final int s, final int c) {
 		size = s;
 		count = c;
 	}
 	/**
 	 * { josphproblem }.
 	 */
-	public void josephproblem() {
-		node newnode = new node(0);
+	public void josephProblem() {
+		Node newnode = new Node(0);
 		head = newnode;
 		tail = newnode;
 		for (int i = 1; i < size; i++) {
-			node n = new node(i);
+			Node n = new Node(i);
 			tail.next = n;
 			tail = n;
 		}
 		int c;
-		node temp;
+		Node temp;
 		while (size != 1) {
 			for (c = 1; c < count; c++) {
 				temp = head;
