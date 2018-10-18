@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 YES
 YES
@@ -95,7 +95,7 @@ YES
 YES
 YES
 NO
-NO
+YES
 YES
 YES
 YES
