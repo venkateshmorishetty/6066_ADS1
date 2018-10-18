@@ -77,7 +77,6 @@ class Merge {
     /**
      * { merges two sub arrays }.
      * { time complexity for merge is O(n)}
-     * 
      *
      * @param      array  The array
      * @param      aux    The auxiliary
