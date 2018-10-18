@@ -1,7 +1,7 @@
 /**
  * Class for Node.
  */
-class Node{
+class Node {
 	int data;
 	Node next;
 	Node(int data) {
@@ -11,7 +11,7 @@ class Node{
 /**
  * Class for Linkedlist.
  */
-class Linkedlist{
+class Linkedlist {
 	Node head = null;
 	int size = 0;
 	Node tail;
