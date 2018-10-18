@@ -6,17 +6,17 @@ class DynamicMedian {
     /**
      * { minheap }.
      */
-    MinPQ<Double> minheap = new MinPQ<Double>();
+    private MinPQ<Double> minheap = new MinPQ<Double>();
     /**
      * { max heap }.
      */
-    MaxPQ<Double> maxheap = new MaxPQ<Double>();
+    private MaxPQ<Double> maxheap = new MaxPQ<Double>();
     /**
-     * { median }
+     * { median }.
      */
     private double m = 0.0;
     /**
-     * { dynamic median }
+     * { dynamic median }.
      *
      * @param      value  The value
      *
@@ -77,7 +77,7 @@ final class Solution {
         DynamicMedian dm = new DynamicMedian();
         for (long i = 0; i < lines; i++) {
             double input = scan.nextDouble();
-            System.out.println(dm.dynamicMedian(input));   
+            System.out.println(dm.dynamicMedian(input));
         }
     }
 }
