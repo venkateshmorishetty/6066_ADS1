@@ -33,7 +33,7 @@ class Quick {
     }
     /**
      * { sort }.
-     *
+     * { time complexity for sort is N*log(N) }.
      * @param      array   The array
      * @param      low     The low
      * @param      high    The high
