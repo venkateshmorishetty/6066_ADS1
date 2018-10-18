@@ -1,7 +1,18 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for three sum.
+ */
 class ThreeSum {
-    public int ThreeSumCount(int[] arr) {
+    /**
+     * { three sum count }.
+     *
+     * @param      arr   The arr
+     *
+     * @return     { count of possible combinations of
+     * three values which their sum gives zero}.
+     */
+    public int ThreeSumcount(final int[] arr) {
         int count = 0;
         int j, k, sum;
         Arrays.sort(arr);
@@ -46,7 +57,7 @@ final class Solution {
         for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }
-        ThreeSum ts = new ThreeSum();       
-        System.out.println(ts.ThreeSumCount(arr));
+        ThreeSum ts = new ThreeSum();
+        System.out.println(ts.ThreeSumcount(arr));
     }
 }
