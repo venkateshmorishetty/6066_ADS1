@@ -51,7 +51,13 @@ class Stack {
  * Class for balanced parenthesis.
  */
 class BalancedParenthesis {
+    /**
+     * { flag value }.
+     */
     private int flag;
+    /**
+     * { satck object }.
+     */
     private Stack s;
     /**
      * { checksBalancedParenthesis }.
@@ -88,10 +94,8 @@ class BalancedParenthesis {
                 }
             }
             if (s.getTop() == -1 && flag == 0) {
-                // System.out.println("YES");
-                return true;    
+                return true;  
             } else {
-                // System.out.println("NO");
                 return false;
             }
     }

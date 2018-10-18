@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:54:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:55:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:90:13: Conditional logic can be removed. [SimplifyBooleanReturn]
-[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:92: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:96:13: Conditional logic can be removed. [SimplifyBooleanReturn]
+[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:97: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
