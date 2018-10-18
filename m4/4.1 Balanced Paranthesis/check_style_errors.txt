@@ -1,4 +1,4 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:96:13: Conditional logic can be removed. [SimplifyBooleanReturn]
+[ERROR] D:\msit\ADS1\6066_ADS1\m4\4.1 Balanced Paranthesis\Solution.java:67: Unused Javadoc tag. [JavadocMethod]
 Audit done.
 Checkstyle ends with 1 errors.

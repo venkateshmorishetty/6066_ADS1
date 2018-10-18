@@ -66,7 +66,7 @@ class BalancedParenthesis {
      *
      * @return     { returns true if it is balanced else false }.
      */
-    public boolean checksBalancedParenthesis(final String input) {
+    public void checksBalancedParenthesis(final String input) {
         flag = 0;
         String[] arr = input.split("", input.length());
             s = new Stack(arr.length);
@@ -94,9 +94,12 @@ class BalancedParenthesis {
                 }
             }
             if (s.getTop() == -1 && flag == 0) {
-                return true;
+                // return true;
+                System.out.println("YES");
+
             } else {
-                return false;
+                // return false;
+                System.out.println("NO");
             }
     }
 }
@@ -121,11 +124,12 @@ final class Solution {
         for (int j = 0; j < lines; j++) {
             String line = sc.next();
             BalancedParenthesis b = new BalancedParenthesis();
-            if (b.checksBalancedParenthesis(line)) {
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
-            }
+            b.checksBalancedParenthesis(line);
+            // if (b.checksBalancedParenthesis(line)) {
+            //     System.out.println("YES");
+            // } else {
+            //     System.out.println("NO");
+            // }
         }
     }
 }
