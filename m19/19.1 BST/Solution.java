@@ -405,7 +405,11 @@ class Solution {
 			btree.put(new Book(input[1], input[2], Float.parseFloat(input[3])), Integer.parseInt(input[4]));
 			break;
 			case "get":
-			System.out.println(btree.get(new Book(input[1], input[2], Float.parseFloat(input[3]))));
+			if(btree.get(new Book(input[1], input[2], Float.parseFloat(input[3]))) == -1) {
+                System.out.println("null");
+            } else {
+                System.out.println(btree.get(new Book(input[1], input[2], Float.parseFloat(input[3]))));
+            }
 			break;
 			case "max":
 			System.out.println(btree.max());

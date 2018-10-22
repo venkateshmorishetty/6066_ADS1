@@ -20,11 +20,14 @@ Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:405: Line is longer than 80 characters (found 120). [LineLength]
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:405:87: '3' is a magic number. [MagicNumber]
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:405:116: '4' is a magic number. [MagicNumber]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:408: Line is longer than 80 characters (found 112). [LineLength]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:408:106: '3' is a magic number. [MagicNumber]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:417: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:417:108: '3' is a magic number. [MagicNumber]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:420: Line is longer than 80 characters (found 113). [LineLength]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:420:107: '3' is a magic number. [MagicNumber]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:408: Line is longer than 80 characters (found 103). [LineLength]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:408:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:408:90: '3' is a magic number. [MagicNumber]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:411: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:411:98: '3' is a magic number. [MagicNumber]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:421: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:421:108: '3' is a magic number. [MagicNumber]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:424: Line is longer than 80 characters (found 113). [LineLength]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:424:107: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 30 errors.
