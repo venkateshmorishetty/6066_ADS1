@@ -394,21 +394,38 @@ class BinarySearchTree {
         }
     }
 }
-class Solution {
-	public static void main(String[] args) {
+/**
+ * {solution class}.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //constructor.
+    }
+    /**
+     * {main function}.
+     *
+     * @param      args  The arguments
+     */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		BinarySearchTree btree = new BinarySearchTree();
 		while (sc.hasNext()) {
 			String[] input = sc.nextLine().split(",");
 			switch (input[0]) {
 			case "put":
-			btree.put(new Book(input[1], input[2], Float.parseFloat(input[3])), Integer.parseInt(input[4]));
+			btree.put(new Book(input[1], input[2], Float.parseFloat(
+                input[2 + 1])), Integer.parseInt(input[4]));
 			break;
 			case "get":
-			if(btree.get(new Book(input[1], input[2], Float.parseFloat(input[3]))) == -1) {
+			if(btree.get(new Book(input[1], input[2],
+                Float.parseFloat(input[2 + 1]))) == -1) {
                 System.out.println("null");
             } else {
-                System.out.println(btree.get(new Book(input[1], input[2], Float.parseFloat(input[3]))));
+                System.out.println(btree.get(new Book(input[1], input[2],
+                    Float.parseFloat(input[2 + 1]))));
             }
 			break;
 			case "max":
@@ -418,10 +435,12 @@ class Solution {
 			System.out.println(btree.min());
 			break;
 			case "floor":
-			System.out.println(btree.floor(new Book(input[1], input[2], Float.parseFloat(input[3]))));
+			System.out.println(btree.floor(new Book(input[1], input[2],
+                Float.parseFloat(input[2 + 1]))));
 			break;
 			case "ceiling":
-			System.out.println(btree.ceil(new Book(input[1], input[2], Float.parseFloat(input[3]))));
+			System.out.println(btree.ceil(new Book(input[1], input[2],
+                Float.parseFloat(input[2 + 1]))));
 			break;
             case "select":
             System.out.println(btree.select(Integer.parseInt(input[1])));
