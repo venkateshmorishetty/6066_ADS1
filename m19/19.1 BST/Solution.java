@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Comparable;
 /**
  * Class for book details.
  */
@@ -173,24 +172,22 @@ class BinarySearchTree {
         int cmp = key.compareTo(x.key);
         if      (cmp < 0) {
             return get(x.leftchild, key);
-        }
-        else if (cmp > 0) {
+        } else if (cmp > 0) {
             return get(x.rightchild, key);
-        }
-        else {
+        } else {
             return x.value;
         }
     }
     /**
-     * { put function. }.
-     * Time complexity is log(n)
-     * @param      key   The key
-     * @param      val   The value
+     * { put }.
+     * time complexity is log(n)
+     * @param      key    The key
+     * @param      value  The value
      */
     public void put(final Book key, final int value) {
         root = put(root, key, value);
     }
-    /**
+    /**.
      * { put function }
      *
      * @param      x      { root }

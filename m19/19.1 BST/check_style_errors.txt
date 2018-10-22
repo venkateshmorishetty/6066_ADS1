@@ -1,11 +1,4 @@
 Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:2:1: Redundant import from the java.lang package - java.lang.Comparable. [RedundantImport]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:2:8: Unused import - java.lang.Comparable. [UnusedImports]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:176:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:179:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:188:8: Unused @param tag for 'val'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:190:47: Expected @param tag for 'value'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:193: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
