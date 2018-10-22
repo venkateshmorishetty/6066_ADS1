@@ -169,10 +169,10 @@ class BinarySearchTree {
         if (x == null) {
             return -1;
         }
-        int cmp = key.compareTo(x.key);
-        if      (cmp < 0) {
+        int check = key.compareTo(x.key);
+        if (check < 0) {
             return get(x.leftchild, key);
-        } else if (cmp > 0) {
+        } else if (check > 0) {
             return get(x.rightchild, key);
         } else {
             return x.value;
