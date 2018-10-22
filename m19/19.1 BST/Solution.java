@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * Class for book details.
+ * class for book.
  */
 class Book implements Comparable {
     /**
