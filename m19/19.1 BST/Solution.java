@@ -149,7 +149,7 @@ class BinarySearchTree {
     }
     /**
      * { get function }.
-     *
+     * time complexity is log(n).
      * @param      key   The key
      *
      * @return     { returns value }
