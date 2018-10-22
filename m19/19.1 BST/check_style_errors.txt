@@ -12,10 +12,7 @@ Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:182:47: Expected @param tag for 'value'. [JavadocMethod]
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:190:8: Unused @param tag for 'val'. [JavadocMethod]
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:194:62: Expected @param tag for 'value'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:412:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:420:56: '4' is a magic number. [MagicNumber]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:423:27: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:438: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:442: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\msit\ADS1\6066_ADS1\m19\19.1 BST\Solution.java:423:15: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 15 errors.

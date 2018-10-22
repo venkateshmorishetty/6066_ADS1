@@ -409,45 +409,45 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		BinarySearchTree btree = new BinarySearchTree();
-		while (sc.hasNext()) {
-			String[] input = sc.nextLine().split(",");
-			switch (input[0]) {
-			case "put":
-			btree.put(new Book(input[1], input[2], Float.parseFloat(
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        BinarySearchTree btree = new BinarySearchTree();
+        while (sc.hasNext()) {
+            String[] input = sc.nextLine().split(",");
+            switch (input[0]) {
+            case "put":
+            btree.put(new Book(input[1], input[2], Float.parseFloat(
                 input[2 + 1])), Integer.parseInt(input[4]));
-			break;
-			case "get":
-			if(btree.get(new Book(input[1], input[2],
+            break;
+            case "get":
+            if(btree.get(new Book(input[1], input[2],
                 Float.parseFloat(input[2 + 1]))) == -1) {
                 System.out.println("null");
             } else {
                 System.out.println(btree.get(new Book(input[1], input[2],
                     Float.parseFloat(input[2 + 1]))));
             }
-			break;
-			case "max":
-			System.out.println(btree.max());
-			break;
-			case "min":
-			System.out.println(btree.min());
-			break;
-			case "floor":
-			System.out.println(btree.floor(new Book(input[1], input[2],
+            break;
+            case "max":
+            System.out.println(btree.max());
+            break;
+            case "min":
+            System.out.println(btree.min());
+            break;
+            case "floor":
+            System.out.println(btree.floor(new Book(input[1], input[2],
                 Float.parseFloat(input[2 + 1]))));
-			break;
-			case "ceiling":
-			System.out.println(btree.ceil(new Book(input[1], input[2],
+            break;
+            case "ceiling":
+            System.out.println(btree.ceil(new Book(input[1], input[2],
                 Float.parseFloat(input[2 + 1]))));
-			break;
+            break;
             case "select":
             System.out.println(btree.select(Integer.parseInt(input[1])));
             break;
             default:
             break;
-			}
-		}
-	}
+            }
+        }
+    }
 }
