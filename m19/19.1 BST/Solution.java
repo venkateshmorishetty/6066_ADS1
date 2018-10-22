@@ -30,7 +30,7 @@ class Book implements Comparable {
         price = p;
     }
     /**
-     * Gets the name.
+     * gets the name.
      *
      * @return     The name.
      */
@@ -85,7 +85,7 @@ class BinarySearchTree {
      * class for node.
      */
     private final class Node {
-        /**
+        /**.
          * key
          */
         private Book key;
@@ -127,7 +127,7 @@ class BinarySearchTree {
         root = null;
     }
     /**
-     * size method.
+     * {size method}.
      *
      * @return size.
      */
@@ -135,7 +135,7 @@ class BinarySearchTree {
         return size(root);
     }
     /**
-     * size function.
+     * {size function}.
      *
      * @param      x Node
      *
@@ -166,12 +166,20 @@ class BinarySearchTree {
      *
      * @return     { value of given key }
      */
-    private int get(final Node x,final  Book key) {
-        if (x == null) return -1;
+    private int get(final Node x, final  Book key) {
+        if (x == null) {
+            return -1;
+        }
         int cmp = key.compareTo(x.key);
-        if      (cmp < 0) return get(x.leftchild, key);
-        else if (cmp > 0) return get(x.rightchild, key);
-        else              return x.value;
+        if      (cmp < 0) {
+            return get(x.leftchild, key);
+        }
+        else if (cmp > 0) {
+            return get(x.rightchild, key);
+        }
+        else {
+            return x.value;
+        }
     }
     /**
      * { put function. }.
@@ -183,13 +191,13 @@ class BinarySearchTree {
         root = put(root, key, value);
     }
     /**
-     * {put function}.
-     * {time complexity is log(n)}
-     * @param      x   root node.
-     * @param      key   The key
-     * @param      val   The value
+     * { put function }
      *
-     * @return root
+     * @param      x      { root }
+     * @param      key    The key
+     * @param      value  The value
+     *
+     * @return     { node }
      */
     private Node put(final Node x, final Book key, final int value) {
         if (x == null) {
@@ -417,10 +425,10 @@ final class Solution {
             switch (input[0]) {
             case "put":
             btree.put(new Book(input[1], input[2], Float.parseFloat(
-                input[2 + 1])), Integer.parseInt(input[4]));
+                input[2 + 1])), Integer.parseInt(input[2 + 2]));
             break;
             case "get":
-            if(btree.get(new Book(input[1], input[2],
+            if (btree.get(new Book(input[1], input[2],
                 Float.parseFloat(input[2 + 1]))) == -1) {
                 System.out.println("null");
             } else {
