@@ -148,8 +148,8 @@ class BinarySearchTree {
         }
     }
     /**
-     * { get function }.
-     * time complexity is log(n).
+     * { returns the value of given key }.
+     * time complexity is O(n).
      * @param      key   The key
      *
      * @return     { returns value }
@@ -158,8 +158,8 @@ class BinarySearchTree {
         return get(root, key);
     }
     /**
-     * { get function }.
-     * { time complexity is log(n)}
+     * { returns the value of given key }.
+     * { time complexity is O(n)}
      * @param      x     { root }
      * @param      key   The key
      *
@@ -179,8 +179,8 @@ class BinarySearchTree {
         }
     }
     /**
-     * { put }.
-     * time complexity is log(n)
+     * { these method to insert element into bst }.
+     * time complexity is O(n)
      * @param      key    The key
      * @param      value  The value
      */
@@ -189,7 +189,7 @@ class BinarySearchTree {
     }
     /**.
      * { put function }
-     *
+     * { time complexity for put is O(n) }
      * @param      x      { root }
      * @param      key    The key
      * @param      value  The value
@@ -219,7 +219,7 @@ class BinarySearchTree {
     }
     /**
      * {minimum function}.
-     * Time complexity is log(n)
+     * Time complexity is O(n)
      * @param      x Node
      *
      * @return minimum.
@@ -254,7 +254,7 @@ class BinarySearchTree {
     }
     /**
      * {floor function}.
-     * time complexity is log(n).
+     * time complexity is O(n).
      * @param      key   The key
      *
      * @return  key
@@ -270,7 +270,7 @@ class BinarySearchTree {
     /**
      *
      * {floor function}.
-     * time complexity is log(n).
+     * time complexity is O(n).
      * @param      x Node
      * @param      key   The key
      *
@@ -296,7 +296,7 @@ class BinarySearchTree {
     }
     /**
      * {ceil function}.
-     * time complexity is log(n)
+     * time complexity is O(n)
      * @param      key   The key
      *
      * @return key.
@@ -311,7 +311,7 @@ class BinarySearchTree {
     }
     /**
      * {ceil function}.
-     * time complexity is log(n)
+     * time complexity is O(n)
      * @param      x Node
      * @param      key   The key
      *
@@ -337,7 +337,7 @@ class BinarySearchTree {
     }
     /**
      * {select method}.
-     * time complexity is log(n).
+     * time complexity is O(n).
      * @param      k     Integer
      *
      * @return     Book Object
@@ -369,13 +369,14 @@ class BinarySearchTree {
     }
     /**
      * { delete the minimum from bst }.
+     * { time complexity is O(n) }
      */
     public void deleteMin() {
         root = deleteMin(root);
     }
     /**
      * { deletes the minimum from bst }.
-     *
+     * { time complexity is O(n)}
      * @param      r     { root }
      *
      * @return     { root of bst }
@@ -390,13 +391,14 @@ class BinarySearchTree {
     }
     /**
      * { delete the maximum from bst }.
+     * { time complexity is O(n) }
      */
     public void deleteMax() {
         root = deleteMax(root);
     }
     /**.
      * { deletes the maximum from bst }
-     *
+     * {time complexity is O(n)}
      * @param      r     { root element }
      *
      * @return     { root node }
@@ -411,7 +413,7 @@ class BinarySearchTree {
     }
     /**.
      * { deletes the given element from bst }
-     *
+     * {time complexity is O(n) }
      * @param      temp  The temporary
      */
     public void delete(final Book temp) {
@@ -419,7 +421,7 @@ class BinarySearchTree {
     }
     /**.
      * { delete the element from bst }
-     *
+     * {time complexity is O(n) }
      * @param      f     { root element }
      * @param      t     { key which we want to delete }
      *
