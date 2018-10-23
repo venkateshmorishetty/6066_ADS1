@@ -383,8 +383,7 @@ class BinarySearchTree {
     public Node deleteMin(final Node r) {
         if (r.leftchild == null) {
             return r.rightchild;
-        }
-        else {
+        } else {
             r.leftchild = deleteMin(r.leftchild);
         }
         return r;
@@ -402,7 +401,7 @@ class BinarySearchTree {
      *
      * @return     { root node }
      */
-    private Node deleteMax(Node r) {
+    private Node deleteMax(final Node r) {
         if (r.rightchild == null) {
             return r.leftchild;
         } else {
@@ -418,7 +417,7 @@ class BinarySearchTree {
     public void delete(final Book temp) {
         root = delete(root, temp);
     }
-    /**
+    /**.
      * { delete the element from bst }
      *
      * @param      f     { root element }
