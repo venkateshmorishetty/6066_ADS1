@@ -1,15 +1,6 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:370:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:373:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:373:27: Parameter r should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:374:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:376:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:383:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:386:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:386:28: Parameter r should be final. [FinalParameters]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:394: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:405:8: Unused @param tag for 'r'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:410:36: Expected @param tag for 'f'. [JavadocMethod]
-[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:494: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:386:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:405:28: Parameter r should be final. [FinalParameters]
+[ERROR] D:\msit\ADS1\6066_ADS1\m20\20.1 BST\Solution.java:421: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 3 errors.

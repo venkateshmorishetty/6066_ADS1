@@ -367,11 +367,21 @@ class BinarySearchTree {
             return x;
         }
     }
+    /**
+     * { delete the minimum from bst }.
+     */
     public void deleteMin() {
         root = deleteMin(root);
     }
-    public Node deleteMin(Node r) {
-        if(r.leftchild == null) {
+    /**
+     * { deletes the minimum from bst }.
+     *
+     * @param      r     { root }
+     *
+     * @return     { root of bst }
+     */
+    public Node deleteMin(final Node r) {
+        if (r.leftchild == null) {
             return r.rightchild;
         }
         else {
@@ -379,10 +389,19 @@ class BinarySearchTree {
         }
         return r;
     }
-
+    /**
+     * { delete the maximum from bst }.
+     */
     public void deleteMax() {
         root = deleteMax(root);
     }
+    /**.
+     * { deletes the maximum from bst }
+     *
+     * @param      r     { root element }
+     *
+     * @return     { root node }
+     */
     private Node deleteMax(Node r) {
         if (r.rightchild == null) {
             return r.leftchild;
@@ -391,7 +410,7 @@ class BinarySearchTree {
         }
         return r;
     }
-    /**
+    /**.
      * { deletes the given element from bst }
      *
      * @param      temp  The temporary
@@ -400,10 +419,10 @@ class BinarySearchTree {
         root = delete(root, temp);
     }
     /**
-     * { delete the given element from bst }.
+     * { delete the element from bst }
      *
-     * @param      r     { root element }
-     * @param      t     { the element which we want to delete }
+     * @param      f     { root element }
+     * @param      t     { key which we want to delete }
      *
      * @return     { description_of_the_return_value }
      */
@@ -491,7 +510,7 @@ final class Solution {
                 break;
             case "delete":
                 btree.delete(new Book(input[1], input[2],
-                    Float.parseFloat(input[2 + 1]))); 
+                    Float.parseFloat(input[2 + 1])));
             default:
                 break;
             }
