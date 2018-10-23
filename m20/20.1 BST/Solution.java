@@ -391,25 +391,38 @@ class BinarySearchTree {
         }
         return r;
     }
-    public void delete(Book temp) {
+    /**
+     * { deletes the given element from bst }
+     *
+     * @param      temp  The temporary
+     */
+    public void delete(final Book temp) {
         root = delete(root, temp);
     }
-    private Node delete(Node r, Book t) {
+    /**
+     * { delete the given element from bst }.
+     *
+     * @param      r     { root element }
+     * @param      t     { the element which we want to delete }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node delete(final Node f, final Book t) {
+        Node r = f;
         if (r == null) {
             return null;
         }
         int check = t.compareTo(r.key);
-        if(check < 0) {
+        if (check < 0) {
             r.leftchild = delete(r.leftchild, t);
-        } else if(check > 0) {
+        } else if (check > 0) {
             r.rightchild = delete(r.rightchild, t);
         } else {
             if (r.rightchild == null && r.leftchild == null) {
                 r = null;
-            }
-            else if (r.leftchild == null) {
+            } else if (r.leftchild == null) {
                 r = r.rightchild;
-            } else if(r.rightchild == null) {
+            } else if (r.rightchild == null) {
                 r = r.leftchild;
             } else {
                 r = min(r.rightchild);
@@ -442,7 +455,7 @@ final class Solution {
             switch (input[0]) {
             case "put":
                 btree.put(new Book(input[1], input[2], Float.parseFloat(
-                                       input[2 + 1])), Integer.parseInt(input[2 + 2]));
+                            input[2 + 1])), Integer.parseInt(input[2 + 2]));
                 break;
             case "get":
                 if (btree.get(new Book(input[1], input[2],
@@ -450,7 +463,7 @@ final class Solution {
                     System.out.println("null");
                 } else {
                     System.out.println(btree.get(new Book(input[1], input[2],
-                                                          Float.parseFloat(input[2 + 1]))));
+                                            Float.parseFloat(input[2 + 1]))));
                 }
                 break;
             case "max":
@@ -461,11 +474,11 @@ final class Solution {
                 break;
             case "floor":
                 System.out.println(btree.floor(new Book(input[1], input[2],
-                                                        Float.parseFloat(input[2 + 1]))));
+                                            Float.parseFloat(input[2 + 1]))));
                 break;
             case "ceiling":
                 System.out.println(btree.ceil(new Book(input[1], input[2],
-                                                       Float.parseFloat(input[2 + 1]))));
+                                            Float.parseFloat(input[2 + 1]))));
                 break;
             case "select":
                 System.out.println(btree.select(Integer.parseInt(input[1])));
@@ -477,7 +490,8 @@ final class Solution {
                 btree.deleteMax();
                 break;
             case "delete":
-                btree.delete(new Book(input[1], input[2], Float.parseFloat(input[3]))); 
+                btree.delete(new Book(input[1], input[2],
+                    Float.parseFloat(input[2 + 1]))); 
             default:
                 break;
             }
