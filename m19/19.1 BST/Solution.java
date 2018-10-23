@@ -149,7 +149,7 @@ class BinarySearchTree {
     }
     /**
      * { get function }.
-     * time complexity is log(n).
+     * time complexity is O(n).
      * @param      key   The key
      *
      * @return     { returns value }
@@ -159,7 +159,7 @@ class BinarySearchTree {
     }
     /**
      * { get function }.
-     * { time complexity is log(n)}
+     * { time complexity is O(n)}
      * @param      x     { root }
      * @param      key   The key
      *
@@ -180,7 +180,7 @@ class BinarySearchTree {
     }
     /**
      * { put }.
-     * time complexity is log(n)
+     * time complexity is O(n)
      * @param      key    The key
      * @param      value  The value
      */
@@ -219,7 +219,7 @@ class BinarySearchTree {
     }
     /**
      * {minimum function}.
-     * Time complexity is log(n)
+     * Time complexity is O(n)
      * @param      x Node
      *
      * @return minimum.
@@ -240,7 +240,7 @@ class BinarySearchTree {
     }
     /**
      * {maximum function}.
-     * time complexity is log(n)
+     * time complexity is O(n)
      * @param      x Node
      *
      * @return maximum.
@@ -254,7 +254,7 @@ class BinarySearchTree {
     }
     /**
      * {floor function}.
-     * time complexity is log(n).
+     * time complexity is O(n).
      * @param      key   The key
      *
      * @return  key
@@ -270,7 +270,7 @@ class BinarySearchTree {
     /**
      *
      * {floor function}.
-     * time complexity is log(n).
+     * time complexity is O(n).
      * @param      x Node
      * @param      key   The key
      *
@@ -296,7 +296,7 @@ class BinarySearchTree {
     }
     /**
      * {ceil function}.
-     * time complexity is log(n)
+     * time complexity is O(n)
      * @param      key   The key
      *
      * @return key.
@@ -311,7 +311,7 @@ class BinarySearchTree {
     }
     /**
      * {ceil function}.
-     * time complexity is log(n)
+     * time complexity is O(n)
      * @param      x Node
      * @param      key   The key
      *
@@ -337,7 +337,7 @@ class BinarySearchTree {
     }
     /**
      * {select method}.
-     * time complexity is log(n).
+     * time complexity is O(n).
      * @param      k     Integer
      *
      * @return     Book Object
@@ -348,7 +348,7 @@ class BinarySearchTree {
     }
     /**
      * {select method}.
-     * Time complexity is log(n)
+     * Time complexity is O(n)
      * @param      x     {Node}
      * @param      k     {Integer}
      *
@@ -379,7 +379,7 @@ class BinarySearchTree {
     }
     /**
      * {rank method}.
-     * time complexity is log(n)
+     * time complexity is O(n)
      * @param      key   The key
      * @param      x     Node variable.
      *
