@@ -498,7 +498,7 @@ final class Solution {
     /**
      * Constructs the object.
      */
-    private solution1() {
+    private Solution() {
         //constructor.
     }
     /**
