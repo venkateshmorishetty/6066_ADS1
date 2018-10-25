@@ -211,6 +211,7 @@ class RansomNote {
             while (temp != null) {
                 if (temp.getData().equals(note[i])) {
                     if (temp.getCount() > 0) {
+                        flag = 1;
                         temp.setCount(temp.getCount() - 1);
                         break;
                     } else {
@@ -220,6 +221,9 @@ class RansomNote {
                 } else {
                     temp = temp.getNext();
                 }
+            } if (flag == 0) {
+                System.out.println("No");
+                return;
             }
 
         }
