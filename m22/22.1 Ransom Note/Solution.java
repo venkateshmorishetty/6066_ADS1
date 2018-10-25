@@ -62,7 +62,7 @@ class Hashing {
      *
      * @param      s     { size of hash table }.
      */
-    public Hashing(int s) {
+    public Hashing(final int s) {
         size = s;
         hash = new Linkedlist[s];
     }
@@ -100,6 +100,9 @@ class Hashing {
         return hash;
     }
 }
+/**
+ * Class for ransom note.
+ */
 class RansomNote {
     /**
      * { magazine size }.
@@ -117,6 +120,9 @@ class RansomNote {
      * { note }.
      */
     String[] note;
+    /**
+     * { hashing class varaible }.
+     */
     Hashing h;
     /**
      * Constructs the object.
@@ -126,7 +132,8 @@ class RansomNote {
      * @param      m     { magazine }
      * @param      n     { note }
      */
-    public RansomNote(int ms, int ns, String[] m, String[] n) {
+    RansomNote(final int ms, final int ns, final String[] m,
+        final String[] n) {
         msize = ms;
         nsize = ns;
         magazine = m;
@@ -190,6 +197,11 @@ final class Solution {
     private Solution() {
         //constructor
     }
+    /**
+     * { main class }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int msize = sc.nextInt();
