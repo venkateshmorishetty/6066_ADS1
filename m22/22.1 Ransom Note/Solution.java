@@ -82,7 +82,7 @@ class Linkedlist {
     }
     /**
      * { add new node to linked list }.
-     *
+     * {time complexity for insertion is O(log(N))}
      * @param      word  The word
      */
     public void insert(final String word) {
@@ -141,7 +141,7 @@ class Hashing {
     }
     /**.
      * { insert into hash table }
-     *
+     * {time complexity for insert is O(log(N))}
      * @param      word  The word
      * @param      pos   The position
      */
@@ -214,6 +214,7 @@ class RansomNote {
     }
     /**
      * { checks whether magazine contain all words of note }.
+     * {time complexity for search is O(log(N)) }
      */
     public void checking() {
         Linkedlist[] hashtable = h.getHash();
