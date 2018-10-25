@@ -7,6 +7,7 @@ class Node {
      * { data }.
      */
     private String data;
+    int count = 1;
     /**
      * { next node address }.
      */
@@ -43,6 +44,12 @@ class Node {
     public void setNext(final Node n) {
         next = n;
     }
+    public int getCount() {
+        return count;
+    }
+    public void setCount(int c) {
+        count = c;
+    }
 }
 /**
  * Class for linkedlist.
@@ -71,8 +78,20 @@ class Linkedlist {
             head = newnode;
         } else {
             Node temp = head;
-            head = newnode;
-            newnode.setNext(temp);
+            int f = 0;
+            while (temp != null) {
+                if (temp.getData().equals(word)) {
+                    f = 1;
+                    temp.setCount(temp.getCount() + 1);
+                    break;
+                } else {
+                    temp = temp.getNext();
+                }
+            }
+            if (f == 0) {
+                newnode.setNext(head);
+                head = newnode;
+            }
         }
     }
 }
@@ -164,7 +183,7 @@ class RansomNote {
      * @param      n     { note }
      */
     RansomNote(final int ms, final int ns, final String[] m,
-        final String[] n) {
+               final String[] n) {
         msize = ms;
         nsize = ns;
         magazine = m;
@@ -184,35 +203,25 @@ class RansomNote {
      * { checks whether magazine contain all words of note }.
      */
     public void checking() {
+        Linkedlist[] hashtable = h.getHash();
         for (int i = 0; i < nsize; i++) {
             int pos = h.key(note[i]);
-            Linkedlist[] hashtable = h.getHash();
-            if (hashtable[pos] == null) {
-                System.out.println("No");
-                return;
-            } else {
-                Node temp = hashtable[pos].getHead();
-                int f = 1;
+            int flag = 0;
+            Node temp = hashtable[pos].getHead();
+            while (temp != null) {
                 if (temp.getData().equals(note[i])) {
-                    f = 0;
-                    temp = temp.getNext();
-                    continue;
-                } else {
-                    while (temp.getNext() != null) {
-                        if (temp.getNext().getData().equals(note[i])) {
-                            f = 0;
-                            temp.setNext(temp.getNext().getNext());
-                            break;
-                        } else {
-                            temp = temp.getNext();
-                        }
+                    if (temp.getCount() > 0) {
+                        temp.setCount(temp.getCount() - 1);
+                        break;
+                    } else {
+                        System.out.println("No");
+                        return;
                     }
-                }
-                if (f == 1) {
-                    System.out.println("No");
-                    return;
+                } else {
+                    temp = temp.getNext();
                 }
             }
+
         }
         System.out.println("Yes");
     }
