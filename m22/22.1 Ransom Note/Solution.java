@@ -181,7 +181,7 @@ class RansomNote {
         }
     }
     /**
-     * { checks whether magazine contain all words of letter }.
+     * { checks whether magazine contain all words of note }.
      */
     public void checking() {
         for (int i = 0; i < nsize; i++) {
