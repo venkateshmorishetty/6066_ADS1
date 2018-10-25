@@ -7,11 +7,11 @@ class Node {
     /**
      * { data }.
      */
-    String data;
+    private String data;
     /**
      * { next node address }.
      */
-    Node next = null;
+    private Node next = null;
     /**
      * Constructs the object.
      *
@@ -19,6 +19,15 @@ class Node {
      */
     Node (final String d) {
         data = d;
+    }
+    public String getData() {
+        return data;
+    }
+    public Node getNext() {
+        return next;
+    }
+    public void setNext(Node n) {
+        next = n;
     }
 }
 /**
@@ -41,7 +50,7 @@ class Linkedlist {
         } else {
             Node temp = head;
             head = newnode;
-            newnode.next = temp;
+            newnode.setNext(temp);
         }
     }
 }
@@ -162,18 +171,18 @@ class RansomNote {
             } else {
                 Node temp = hashtable[pos].head;
                 int f = 1;
-                if (temp.data.equals(note[i])) {
+                if (temp.getData().equals(note[i])) {
                     f = 0;
-                    temp = temp.next;
+                    temp = temp.getNext();
                     continue;
                 } else {
-                    while (temp.next != null) {
-                        if (temp.next.data.equals(note[i])) {
+                    while (temp.getNext() != null) {
+                        if (temp.getNext().getData().equals(note[i])) {
                             f = 0;
-                            temp.next = temp.next.next;
+                            temp.setNext(temp.getNext().getNext());
                             break;
                         } else {
-                            temp = temp.next;
+                            temp = temp.getNext();
                         }
                     }
                 }
