@@ -70,7 +70,7 @@ class RansomNote {
 			int pos = h.key(note[i]);
 			Linkedlist[] hashtable = h.getHash();
 			if (hashtable[pos] == null) {
-				System.out.println("NO");
+				System.out.println("No");
 				return;
 			} else {
 				Node temp = hashtable[pos].head;
@@ -91,12 +91,12 @@ class RansomNote {
 					}
 				}
 				if (f == 1) {
-					System.out.println("NO");
+					System.out.println("No");
 					return;
 				}
 			}
 		}
-		System.out.println("YES");
+		System.out.println("Yes");
 	}
 
 }
