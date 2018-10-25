@@ -1,14 +1,2 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:20:10: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:55:10: Variable 'head' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:79:18: Variable 'hash' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:83:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:134:9: Variable 'msize' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:138:9: Variable 'nsize' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:142:14: Variable 'magazine' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:146:14: Variable 'note' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:150:13: Variable 'h' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 11 errors.

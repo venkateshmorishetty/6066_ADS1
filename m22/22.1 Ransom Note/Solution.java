@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for node.
  */
@@ -17,7 +16,7 @@ class Node {
      *
      * @param      d     { data of node }
      */
-    Node (final String d) {
+    Node(final String d) {
         data = d;
     }
     /**
@@ -52,7 +51,15 @@ class Linkedlist {
     /**
      * { head of linked list }.
      */
-    Node head = null;
+    private Node head = null;
+    /**
+     * Gets the head.
+     *
+     * @return     The head.
+     */
+    public Node getHead() {
+        return head;
+    }
     /**
      * { add new node to linked list }.
      *
@@ -76,11 +83,11 @@ class Hashing {
     /**
      * { hash table of lonked list objects }.
      */
-    Linkedlist[] hash;
+    private Linkedlist[] hash;
     /**
      * { size }.
      */
-    int size;
+    private int size;
     /**
      * Constructs the object.
      *
@@ -131,23 +138,23 @@ class RansomNote {
     /**
      * { magazine size }.
      */
-    int msize;
+    private int msize;
     /**
      * { note size }.
      */
-    int nsize;
+    private int nsize;
     /**
      * { magazine }.
      */
-    String[] magazine;
+    private String[] magazine;
     /**
      * { note }.
      */
-    String[] note;
+    private String[] note;
     /**
      * { hashing class varaible }.
      */
-    Hashing h;
+    private Hashing h;
     /**
      * Constructs the object.
      *
@@ -184,7 +191,7 @@ class RansomNote {
                 System.out.println("No");
                 return;
             } else {
-                Node temp = hashtable[pos].head;
+                Node temp = hashtable[pos].getHead();
                 int f = 1;
                 if (temp.getData().equals(note[i])) {
                     f = 0;
