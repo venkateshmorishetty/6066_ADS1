@@ -1,0 +1,6 @@
+[master fd4f0b7] "ads1_m22_a1: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 4 insertions(+), 3 deletions(-)
+ rewrite m22/22.1 Ransom Note/result/score.json (77%)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/venkateshmorishetty/6066_ADS1.git
+   a718833..fd4f0b7  master -> master
