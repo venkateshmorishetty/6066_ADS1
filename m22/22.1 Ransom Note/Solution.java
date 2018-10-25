@@ -20,13 +20,28 @@ class Node {
     Node (final String d) {
         data = d;
     }
+    /**
+     * Gets the data.
+     *
+     * @return     The data.
+     */
     public String getData() {
         return data;
     }
+    /**
+     * Gets the next.
+     *
+     * @return     The next.
+     */
     public Node getNext() {
         return next;
     }
-    public void setNext(Node n) {
+    /**
+     * Sets the next.
+     *
+     * @param      n     { next node address }
+     */
+    public void setNext(final Node n) {
         next = n;
     }
 }
