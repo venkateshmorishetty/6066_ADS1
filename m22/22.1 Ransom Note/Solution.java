@@ -17,7 +17,7 @@ class Node {
      *
      * @param      d     { data of node }
      */
-    public Node (final String d) {
+    Node (final String d) {
         data = d;
     }
 }
@@ -62,7 +62,7 @@ class Hashing {
      *
      * @param      s     { size of hash table }.
      */
-    public Hashing(final int s) {
+    Hashing(final int s) {
         size = s;
         hash = new Linkedlist[s];
     }

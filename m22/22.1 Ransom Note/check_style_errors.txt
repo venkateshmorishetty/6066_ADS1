@@ -3,16 +3,14 @@ Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:10:12: Variable 'data' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:14:10: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:20:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:20:17: '(' is preceded with whitespace. [MethodParamPad]
+[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:20:10: '(' is preceded with whitespace. [MethodParamPad]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:31:10: Variable 'head' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:55:18: Variable 'hash' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:59:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:65:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:110:9: Variable 'msize' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:114:9: Variable 'nsize' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:118:14: Variable 'magazine' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:122:14: Variable 'note' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\m22\22.1 Ransom Note\Solution.java:126:13: Variable 'h' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 13 errors.
