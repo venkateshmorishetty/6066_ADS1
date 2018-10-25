@@ -7,7 +7,10 @@ class Node {
      * { data }.
      */
     private String data;
-    int count = 1;
+    /**
+     * { number of occurences }.
+     */
+    private int count = 1;
     /**
      * { next node address }.
      */
@@ -44,10 +47,20 @@ class Node {
     public void setNext(final Node n) {
         next = n;
     }
+    /**
+     * Gets the count.
+     *
+     * @return     The count.
+     */
     public int getCount() {
         return count;
     }
-    public void setCount(int c) {
+    /**
+     * Sets the count.
+     *
+     * @param      c     { set the count value }
+     */
+    public void setCount(final int c) {
         count = c;
     }
 }
