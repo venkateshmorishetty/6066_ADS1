@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for linear probing hash st.
  *
@@ -7,9 +6,9 @@ import java.util.Arrays;
  * @param      <Value>  The value
  */
 class LinearProbingHashST<Key, Value> {
-	/**
-	 * { capacity }.
-	 */
+    /**
+     * { capacity }.
+     */
     private static final int CAPACITY = 2;
     /**
      * { number of keys }.
@@ -78,7 +77,7 @@ class LinearProbingHashST<Key, Value> {
      * @return     { hash value of given key }
      */
     private int hash(final Key key) {
-    	final int temp = 11;
+        final int temp = 11;
         return (key.hashCode() * temp) % m;
     }
     /**.
@@ -109,8 +108,8 @@ class LinearProbingHashST<Key, Value> {
             delete(key);
             return;
         }
-        if (n >= m / 2) { 
-        	resize(2 * m);
+        if (n >= m / 2) {
+            resize(2 * m);
         }
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -146,10 +145,10 @@ class LinearProbingHashST<Key, Value> {
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++) {
-        	if (keys[i] != null) {
-            		queue.enqueue(keys[i]);
+            if (keys[i] != null) {
+                    queue.enqueue(keys[i]);
             }
-        }   
+        }
         return queue;
     }
     /**.
@@ -159,7 +158,7 @@ class LinearProbingHashST<Key, Value> {
      */
     public void delete(final Key key) {
         if (!contains(key)) {
-        	return;
+            return;
         }
         int i = hash(key);
         while (!key.equals(keys[i])) {
@@ -179,62 +178,62 @@ class LinearProbingHashST<Key, Value> {
         }
         n--;
         if (n > 0 && n <= m / (2 * 2 * 2)) {
-        		resize(m / 2);
+                resize(m / 2);
         }
     }
     /**
      * { display given the hash table }.
      */
     public void display() {
-    	if (size() == 0) {
-    		System.out.println("{}");
-    	} else {
-    		String s = "";
-    		 for (Key s1: keys()) {
+        if (size() == 0) {
+            System.out.println("{}");
+        } else {
+            String s = "";
+             for (Key s1: keys()) {
                         s += s1 + ":" + get(s1) + ", ";
                     }
-    		System.out.println("{" + s.substring(
+            System.out.println("{" + s.substring(
                         0, s.length() - 2) + "}");
-    	}
+        }
     }
 }
 /**
  * Class for solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//constructor
-	}
-	/**
-	 * { main function }.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		LinearProbingHashST<String, Integer> ht =
-		new LinearProbingHashST<String, Integer>();
-		while (sc.hasNext()) {
-			String[] input = sc.nextLine().split(" ");
-			switch (input[0]) {
-			case "put":
-				ht.put(input[1], Integer.parseInt(input[2]));
-				break;
-			case "get":
-				System.out.println(ht.get(input[1]));
-				break;
-			case "delete":
-				ht.delete(input[1]);
-				break;
-			case "display":
-				ht.display();
-				break;
-			default:
-				break;
-			}
-		}
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //constructor
+    }
+    /**
+     * { main function }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LinearProbingHashST<String, Integer> ht =
+        new LinearProbingHashST<String, Integer>();
+        while (sc.hasNext()) {
+            String[] input = sc.nextLine().split(" ");
+            switch (input[0]) {
+            case "put":
+                ht.put(input[1], Integer.parseInt(input[2]));
+                break;
+            case "get":
+                System.out.println(ht.get(input[1]));
+                break;
+            case "delete":
+                ht.delete(input[1]);
+                break;
+            case "display":
+                ht.display();
+                break;
+            default:
+                break;
+            }
+        }
+    }
 }
