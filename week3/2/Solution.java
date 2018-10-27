@@ -20,7 +20,8 @@ class Student {
 class Solution {
 	/**
 	 * { main class }.
-	 * { time complexity is log(n)}
+	 * { time complexity is to insert each student in bst log(n)}
+	 * {to get value of student log(n)}
 	 *
 	 * @param      args  The arguments
 	 */
