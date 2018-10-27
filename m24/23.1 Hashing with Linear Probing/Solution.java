@@ -38,7 +38,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param      s     { size }
      */
-    public LinearProbingHashST(int s) {
+    public LinearProbingHashST(final int s) {
         m = s;
         n = 0;
         keys = (Key[])   new Object[m];
@@ -107,8 +107,9 @@ class LinearProbingHashST<Key, Value> {
             delete(key);
             return;
         }
-        if (n >= m/2) resize(2*m);
-
+        if (n >= m/2) { 
+        	resize(2*m);
+        }
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
             if (keys[i].equals(key)) {
@@ -127,10 +128,12 @@ class LinearProbingHashST<Key, Value> {
      *
      * @return     { value }
      */
-    public Value get(Key key) {
-        for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
-            if (keys[i].equals(key))
+    public Value get(final Key key) {
+        for (int i = hash(key); keys[i] != null; i = (i + 1) % m) {
+            if (keys[i].equals(key)) {
                 return values[i];
+            }
+        }
         return null;
     }
     /**
@@ -141,7 +144,11 @@ class LinearProbingHashST<Key, Value> {
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++)
-            if (keys[i] != null) queue.enqueue(keys[i]);
+        {
+        	if (keys[i] != null) {
+            		queue.enqueue(keys[i]);
+            }
+        }      
         return queue;
     }
     /**
@@ -149,8 +156,10 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param      key   The key
      */
-    public void delete(Key key) {
-        if (!contains(key)) return;
+    public void delete(final Key key) {
+        if (!contains(key)) {
+        	return;
+        } 
         int i = hash(key);
         while (!key.equals(keys[i])) {
             i = (i + 1) % m;
@@ -168,13 +177,15 @@ class LinearProbingHashST<Key, Value> {
             i = (i + 1) % m;
         }
         n--;
-        if (n > 0 && n <= m/8) resize(m/2);
+        if (n > 0 && n <= m / (2 * 2 * 2)) {
+        		resize(m / 2);
+        }
     }
     /**
      * { display given the hash table }.
      */
     public void display() {
-    	if(size() == 0) {
+    	if (size() == 0) {
     		System.out.println("{}");
     	} else {
     		String s = "";
@@ -193,7 +204,7 @@ final class Solution {
 	/**
 	 * Constructs the object.
 	 */
-	Solution() {
+	private Solution() {
 		//constructor
 	}
 	/**
