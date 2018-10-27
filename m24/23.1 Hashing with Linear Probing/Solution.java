@@ -30,7 +30,7 @@ class LinearProbingHashST<Key, Value> {
     /**
      * Constructs the object.
      */
-    public LinearProbingHashST() {
+    LinearProbingHashST() {
         this(CAPACITY);
     }
     /**
@@ -38,13 +38,13 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param      s     { size }
      */
-    public LinearProbingHashST(final int s) {
+    LinearProbingHashST(final int s) {
         m = s;
         n = 0;
         keys = (Key[])   new Object[m];
         values = (Value[]) new Object[m];
     }
-    /**
+    /**.
      * { size }
      *
      * @return     { size }
@@ -67,7 +67,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @return     { true or false }
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
     /**
@@ -77,16 +77,18 @@ class LinearProbingHashST<Key, Value> {
      *
      * @return     { hash value of given key }
      */
-    private int hash(Key key) {
-        return (key.hashCode() * 11) % m;
+    private int hash(final Key key) {
+    	final int temp = 11;
+        return (key.hashCode() * temp) % m;
     }
-    /**
-     * { resize array }
+    /**.
+     * { resizes array }.
      *
-     * @param      capacity  The capacity
+     * @param      c     { capacity }
      */
-    private void resize(int capacity) {
-        LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
+    private void resize(final int c) {
+        LinearProbingHashST<Key, Value> temp = new
+        LinearProbingHashST<Key, Value>(c);
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 temp.put(keys[i], values[i]);
@@ -96,19 +98,19 @@ class LinearProbingHashST<Key, Value> {
         values = temp.values;
         m    = temp.m;
     }
-    /**
+    /**.
      * { put given key }
      *
      * @param      key   The key
      * @param      val   The value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (val == null) {
             delete(key);
             return;
         }
-        if (n >= m/2) { 
-        	resize(2*m);
+        if (n >= m / 2) { 
+        	resize(2 * m);
         }
         int i;
         for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
@@ -136,22 +138,21 @@ class LinearProbingHashST<Key, Value> {
         }
         return null;
     }
-    /**
+    /**.
      * { return all keys }
      *
      * @return     { keys }
      */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
-        for (int i = 0; i < m; i++)
-        {
+        for (int i = 0; i < m; i++) {
         	if (keys[i] != null) {
             		queue.enqueue(keys[i]);
             }
-        }      
+        }   
         return queue;
     }
-    /**
+    /**.
      * { delete given key }
      *
      * @param      key   The key
@@ -159,7 +160,7 @@ class LinearProbingHashST<Key, Value> {
     public void delete(final Key key) {
         if (!contains(key)) {
         	return;
-        } 
+        }
         int i = hash(key);
         while (!key.equals(keys[i])) {
             i = (i + 1) % m;
