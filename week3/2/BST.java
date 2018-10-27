@@ -58,7 +58,14 @@ public class BST<Key extends Comparable<Key>, Value> {
     public Value get(Key key) {
         return get(root, key);
     }
-
+    /**
+     * { get }
+     * {time complexity to put in avg case is log(n)}
+     * @param      x     { root }
+     * @param      key   The key
+     *
+     * @return     { value }
+     */
     private Value get(Node x, Key key) {
         if (key == null) throw new IllegalArgumentException("called get() with a null key");
         if (x == null) return null;
@@ -72,7 +79,7 @@ public class BST<Key extends Comparable<Key>, Value> {
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
-     *
+     * {time complexity to put O(n)}
      * @param  key the key
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -146,7 +153,14 @@ public class BST<Key extends Comparable<Key>, Value> {
         root = delete(root, key);
         assert check();
     }
-
+    /**
+     * { delete }
+     * {time complexity to put in avg case is log(n)}
+     * @param      x     {root }
+     * @param      key   The key
+     *
+     * @return     { root }
+     */
     private Node delete(Node x, Key key) {
         if (x == null) return null;
 

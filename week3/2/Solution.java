@@ -14,7 +14,16 @@ class Student {
     }
 
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * { main class }.
+	 * { time complexity is log(n)}
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int data = Integer.parseInt(sc.nextLine());
