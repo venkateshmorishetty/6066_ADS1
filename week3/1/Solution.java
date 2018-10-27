@@ -50,7 +50,7 @@ final class Solution {
     }
     /**
      * { main function }.
-     *
+     * {time complexity is n + log(n*) *=conditions}
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

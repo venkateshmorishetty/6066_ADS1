@@ -81,7 +81,7 @@ public class LinearProbingHashST<Key, Value> {
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
      * if the specified value is {@code null}.
-     *
+     * {time compleity is O(logn*)}
      * @param  key the key
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -115,6 +115,7 @@ public class LinearProbingHashST<Key, Value> {
      * @return the value associated with {@code key};
      *         {@code null} if no such value
      * @throws IllegalArgumentException if {@code key} is {@code null}
+     * {time compleity is O(logn*)}
      */
     public Value get(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to get() is null");
@@ -127,7 +128,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * Removes the specified key and its associated value from this symbol table     
      * (if the key is in this symbol table).    
-     *
+     * {time compleity is O(logn*)}
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
