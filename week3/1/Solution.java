@@ -45,7 +45,7 @@ final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    public Solution() {
         //constructor
     }
     /**
@@ -55,7 +55,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        LinearProbingHashST<Integer, Student> linear = 
+        LinearProbingHashST<Integer, Student> linear =
         new LinearProbingHashST<Integer, Student>();
         int total = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < total; i++) {

@@ -1,5 +1,5 @@
 Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:44:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:58: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:48:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
 Checkstyle ends with 2 errors.
