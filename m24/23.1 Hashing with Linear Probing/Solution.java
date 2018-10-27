@@ -99,7 +99,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**.
      * { put given key }
-     *
+     * { time complexity to put is log(n*) * = conditions}
      * @param      key   The key
      * @param      val   The value
      */
@@ -124,7 +124,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * { get the value of given key }.
-     *
+     * { time complexity for get is log(n*) * = conditions}
      * @param      key   The key
      *
      * @return     { value }
@@ -153,7 +153,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**.
      * { delete given key }
-     *
+     * { time complexity delete is log(n*) * = conditions}
      * @param      key   The key
      */
     public void delete(final Key key) {
@@ -183,6 +183,7 @@ class LinearProbingHashST<Key, Value> {
     }
     /**
      * { display given the hash table }.
+     * { time complexity for display is o(N)}
      */
     public void display() {
         if (size() == 0) {
@@ -209,7 +210,7 @@ final class Solution {
     }
     /**
      * { main function }.
-     *
+     * { time complexity is n*log(n*) * = conditions}
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
