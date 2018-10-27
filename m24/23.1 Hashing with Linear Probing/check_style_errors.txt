@@ -35,7 +35,7 @@ Starting audit...
 [ERROR] D:\msit\ADS1\6066_ADS1\m24\23.1 Hashing with Linear Probing\Solution.java:171:29: '8' is a magic number. [MagicNumber]
 [ERROR] D:\msit\ADS1\6066_ADS1\m24\23.1 Hashing with Linear Probing\Solution.java:171:40: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\msit\ADS1\6066_ADS1\m24\23.1 Hashing with Linear Probing\Solution.java:171:41: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\msit\ADS1\6066_ADS1\m24\23.1 Hashing with Linear Probing\Solution.java:177:11: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\msit\ADS1\6066_ADS1\m24\23.1 Hashing with Linear Probing\Solution.java:177:11: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\msit\ADS1\6066_ADS1\m24\23.1 Hashing with Linear Probing\Solution.java:192:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
 Checkstyle ends with 38 errors.
