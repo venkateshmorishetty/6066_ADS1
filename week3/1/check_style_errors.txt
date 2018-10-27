@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:20:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:44:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:52: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] D:\msit\ADS1\6066_ADS1\week3\1\Solution.java:58: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
