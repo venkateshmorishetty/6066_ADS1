@@ -17,7 +17,7 @@ class DynamicMedian {
     private double m = 0.0;
     /**
      * { dynamic median }.
-     *
+     * { time complexity for dynamic median is nlog(n)}
      * @param      value  The value
      *
      * @return     { medain value }

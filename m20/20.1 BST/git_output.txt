@@ -1,0 +1,5 @@
+[master ad2d64f] ": 3/3 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 20 insertions(+), 18 deletions(-)
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+To https://github.com/venkateshmorishetty/6066_ADS1.git
+   e924f23..ad2d64f  master -> master

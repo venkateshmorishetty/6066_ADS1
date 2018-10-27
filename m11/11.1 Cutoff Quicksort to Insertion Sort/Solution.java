@@ -53,8 +53,7 @@ class Quick {
     }
     /**
      * { partition function }.
-     * { the time complexity for quick sort is nlogn in best case
-     * and O(n^2) in worst case}
+     * { the time complexity for partition is O(n) }
      * @param      a     { parameter_description }
      * @param      low   The low
      * @param      high  The high

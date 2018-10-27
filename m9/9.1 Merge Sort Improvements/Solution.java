@@ -118,7 +118,7 @@ class Merge {
     /**
      * Determines if sorted.
      *
-     * @param      a     { parameter_description }
+     * @param      a     { given array of values }
      *
      * @return     True if sorted, False otherwise.
      */
